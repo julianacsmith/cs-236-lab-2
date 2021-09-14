@@ -1,0 +1,76 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+Token.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/LeftParenAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.cpp
+Lexer.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
+ColonAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonAutomaton.h
+ColonDashAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
+CommaAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.h
+PeriodAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/PeriodAutomaton.h
+QMarkAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QMarkAutomaton.h
+LeftParenAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/LeftParenAutomaton.h
+RightParenAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
+vector
+-
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+Token.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/PeriodAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QMarkAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.cpp
+RightParenAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
+iostream
+-
+string
+-
+

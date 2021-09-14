@@ -15,4 +15,4 @@ add_executable(cs_236_lab_1
         "Project1_Starter_Code (1)/Lexer.h"
         "Project1_Starter_Code (1)/main.cpp"
         "Project1_Starter_Code (1)/Token.cpp"
-        "Project1_Starter_Code (1)/Token.h")
+        "Project1_Starter_Code (1)/Token.h" "Project1_Starter_Code (1)/CommaAutomaton.h" "Project1_Starter_Code (1)/CommaAutomaton.cpp" "Project1_Starter_Code (1)/QMarkAutomaton.h" "Project1_Starter_Code (1)/QMarkAutomaton.cpp" "Project1_Starter_Code (1)/PeriodAutomaton.h" "Project1_Starter_Code (1)/PeriodAutomaton.cpp" "Project1_Starter_Code (1)/LeftParenAutomaton.h" "Project1_Starter_Code (1)/LeftParenAutomaton.cpp" "Project1_Starter_Code (1)/RightParenAutomaton.h" "Project1_Starter_Code (1)/RightParenAutomaton.cpp" "Project1_Starter_Code (1)/MultiplyAutomaton.h" "Project1_Starter_Code (1)/MultiplyAutomaton.cpp" "Project1_Starter_Code (1)/AddAutomaton.h" "Project1_Starter_Code (1)/AddAutomaton.cpp")

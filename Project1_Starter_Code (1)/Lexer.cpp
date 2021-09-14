@@ -1,7 +1,15 @@
 #include "Lexer.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "CommaAutomaton.h"
+#include "PeriodAutomaton.h"
+#include "QMarkAutomaton.h"
+#include "LeftParenAutomaton.h"
+#include "RightParenAutomaton.h"
+#include "MultiplyAutomaton.h"
+#include "AddAutomaton.h"
 
+using namespace std;
 Lexer::Lexer() {
     CreateAutomata();
 }
@@ -14,6 +22,13 @@ void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
     // TODO: Add the other needed automata here
+    automata.push_back(new CommaAutomaton());
+    automata.push_back(new PeriodAutomaton());
+    automata.push_back(new QMarkAutomaton());
+    automata.push_back(new LeftParenAutomaton());
+    automata.push_back(new RightParenAutomaton());
+    automata.push_back(new MultiplyAutomaton());
+    automata.push_back(new AddAutomaton());
 }
 
 void Lexer::Run(std::string& input) {
@@ -55,4 +70,50 @@ void Lexer::Run(std::string& input) {
     }
     add end of file token to all tokens
     */
+
+    //Actual Code Version
+
+    int lineNumber = 1; // set lineNumber to 1
+    while (!input.empty()){ // While there's more to tokenize
+        int maxRead = 0; // set maxRead to 0
+        Automaton* maxAutomaton = automata.at(0); //set maxAutomation tothe first automata
+        //Handle whitespace
+        while(input.at(maxRead) == ' '){
+            maxRead++;
+        }
+
+        input.erase(0,maxRead);
+        maxRead = 0;
+
+        //Parallel Part
+        for (Automaton* automaton : automata){
+            int inputRead = automaton->Start(input);
+            if(inputRead > maxRead){
+                maxRead = inputRead;
+                maxAutomaton = automaton;
+            }
+        }
+        //Max part
+        if (maxRead > 0){
+            string newInput = input.substr(0,maxRead);
+            Token *newToken = maxAutomaton->CreateToken(newInput, maxRead);
+            lineNumber+=maxAutomaton->NewLinesRead();
+            tokens.push_back(newToken);
+        }
+        else {
+            maxRead = 1;
+            Token* newToken = reinterpret_cast<Token *>(input.at(0));
+            tokens.push_back(newToken);
+            std::cout << newToken << std::endl;
+        }
+        input.erase(0,maxRead);
+    }
 }
+
+string Lexer::toString(){
+    string output;
+    for (Token* token : tokens){
+        output += token->toString() + "\n";
+    }
+    return output;
+};

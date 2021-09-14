@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Automaton.h
+Token.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Token.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonAutomaton.cpp
+ColonAutomaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonAutomaton.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonAutomaton.h
+Automaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Automaton.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonDashAutomaton.cpp
+ColonDashAutomaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
+Automaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Automaton.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Lexer.cpp
+Lexer.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Lexer.h
+ColonAutomaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonAutomaton.h
+ColonDashAutomaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Lexer.h
+vector
+-
+Automaton.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Automaton.h
+Token.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Token.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Token.cpp
+Token.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Token.h
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Token.h
+string
+-
+
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/main.cpp
+Lexer.h
+/Users/julianasmith/CLionProjects/cs-236-lab-1/Project1_Starter_Code (1)/Lexer.h
+

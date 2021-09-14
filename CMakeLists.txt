@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.16.3)
+project(cs_236_lab_1)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories("Project1_Starter_Code (1)")
+
+add_executable(cs_236_lab_1
+        "Project1_Starter_Code (1)/Automaton.h"
+        "Project1_Starter_Code (1)/ColonAutomaton.cpp"
+        "Project1_Starter_Code (1)/ColonAutomaton.h"
+        "Project1_Starter_Code (1)/ColonDashAutomaton.cpp"
+        "Project1_Starter_Code (1)/ColonDashAutomaton.h"
+        "Project1_Starter_Code (1)/Lexer.cpp"
+        "Project1_Starter_Code (1)/Lexer.h"
+        "Project1_Starter_Code (1)/main.cpp"
+        "Project1_Starter_Code (1)/Token.cpp"
+        "Project1_Starter_Code (1)/Token.h")

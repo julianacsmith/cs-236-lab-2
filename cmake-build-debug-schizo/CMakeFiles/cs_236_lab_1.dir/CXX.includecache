@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/AddAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 Token.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
@@ -19,6 +23,12 @@ Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.cpp
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
@@ -43,6 +53,14 @@ LeftParenAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/LeftParenAutomaton.h
 RightParenAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
+MultiplyAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/MultiplyAutomaton.h
+AddAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/AddAutomaton.h
+SchemesAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h
+FactsAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
 
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
 vector
@@ -52,6 +70,10 @@ Automaton.h
 Token.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/MultiplyAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/PeriodAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
@@ -60,11 +82,11 @@ Automaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
-/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.cpp
-RightParenAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
-/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 

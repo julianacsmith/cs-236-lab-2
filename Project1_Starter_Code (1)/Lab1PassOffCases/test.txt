@@ -1,3 +1,7 @@
-:- :
-. ? , (
-)  +  *
+Schemes: :-
+
+Facts:
+
+Rules:-
+
+(Queries*):

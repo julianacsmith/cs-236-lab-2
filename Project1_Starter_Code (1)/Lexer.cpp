@@ -8,6 +8,10 @@
 #include "RightParenAutomaton.h"
 #include "MultiplyAutomaton.h"
 #include "AddAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "FactsAutomaton.h"
+#include "RulesAutomaton.h"
+#include "QueriesAutomaton.h"
 
 using namespace std;
 Lexer::Lexer() {
@@ -29,6 +33,10 @@ void Lexer::CreateAutomata() {
     automata.push_back(new RightParenAutomaton());
     automata.push_back(new MultiplyAutomaton());
     automata.push_back(new AddAutomaton());
+    automata.push_back(new SchemesAutomaton());
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new RulesAutomaton());
+    automata.push_back(new QueriesAutomaton());
 }
 
 void Lexer::Run(std::string& input) {
@@ -115,5 +123,7 @@ string Lexer::toString(){
     for (Token* token : tokens){
         output += token->toString() + "\n";
     }
+    output += "TOKENS: ";
+    output += to_string(tokens.size());
     return output;
 };

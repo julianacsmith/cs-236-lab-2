@@ -111,6 +111,12 @@
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.h">
 			<Option target="cs_236_lab_1"/>
 		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.cpp">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/LeftParenAutomaton.cpp">
 			<Option target="cs_236_lab_1"/>
 		</Unit>
@@ -141,10 +147,31 @@
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QMarkAutomaton.h">
 			<Option target="cs_236_lab_1"/>
 		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.cpp">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.h">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.cpp">
 			<Option target="cs_236_lab_1"/>
 		</Unit>
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RulesAutomaton.cpp">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RulesAutomaton.h">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemeAutomaton.h">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.cpp">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h">
 			<Option target="cs_236_lab_1"/>
 		</Unit>
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.cpp">

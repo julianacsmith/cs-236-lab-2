@@ -4,7 +4,7 @@ buckets:=70 90 100
 numbers_70:=1 3 4 5 6 7 noway
 numbers_90:=1 2 3
 numbers_100:=1 2
-tests:=Lab$(NUM)PassOffCases
+tests:=Lab$(NUM)PassOffCasesOfficial
 
 .SILENT: all $(buckets)
 

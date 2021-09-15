@@ -12,6 +12,12 @@
 #include "FactsAutomaton.h"
 #include "RulesAutomaton.h"
 #include "QueriesAutomaton.h"
+#include "IDAutomaton.h"
+#include "StringAutomaton.h"
+#include "CommentAutomaton.h"
+#include "UndefinedAutomaton.h"
+#include "EOFAutomaton.h"
+#include <algorithm>
 
 using namespace std;
 Lexer::Lexer() {
@@ -37,6 +43,11 @@ void Lexer::CreateAutomata() {
     automata.push_back(new FactsAutomaton());
     automata.push_back(new RulesAutomaton());
     automata.push_back(new QueriesAutomaton());
+    automata.push_back(new StringAutomaton());
+    automata.push_back(new IDAutomaton());
+    automata.push_back(new CommentAutomaton());
+    automata.push_back(new UndefinedAutomaton());
+    automata.push_back(new EOFAutomaton());
 }
 
 void Lexer::Run(std::string& input) {
@@ -86,7 +97,10 @@ void Lexer::Run(std::string& input) {
         int maxRead = 0; // set maxRead to 0
         Automaton* maxAutomaton = automata.at(0); //set maxAutomation tothe first automata
         //Handle whitespace
-        while(input.at(maxRead) == ' '){
+        while(input.at(maxRead) == ' ' || input.at(maxRead) == '\t' || input.at(maxRead) == '\n'){
+            if(input.at(maxRead) == '\n'){
+                lineNumber++;
+            }
             maxRead++;
         }
 
@@ -99,23 +113,27 @@ void Lexer::Run(std::string& input) {
             if(inputRead > maxRead){
                 maxRead = inputRead;
                 maxAutomaton = automaton;
+                break;
             }
         }
         //Max part
         if (maxRead > 0){
             string newInput = input.substr(0,maxRead);
-            Token *newToken = maxAutomaton->CreateToken(newInput, maxRead);
+            Token *newToken = maxAutomaton->CreateToken(newInput, lineNumber);
             lineNumber+=maxAutomaton->NewLinesRead();
+            //lineNumber +=  count(newInput.begin(), newInput.end(), '\n');
             tokens.push_back(newToken);
         }
         else {
             maxRead = 1;
-            Token* newToken = reinterpret_cast<Token *>(input.at(0));
+            string newInput = input.substr(0,maxRead);
+            Token* newToken = new Token(TokenType::UNDEFINED, newInput, lineNumber);
             tokens.push_back(newToken);
             std::cout << newToken << std::endl;
         }
         input.erase(0,maxRead);
     }
+    tokens.push_back(new Token(TokenType::E_OF,"",lineNumber));
 }
 
 string Lexer::toString(){

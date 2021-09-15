@@ -1,7 +1,0 @@
-Schemes: :-
-
-Facts:
-
-Rules:-
-
-(Queries*):

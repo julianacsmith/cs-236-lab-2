@@ -26,9 +26,11 @@ Automaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
-/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.cpp
-
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
@@ -61,6 +63,14 @@ SchemesAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h
 FactsAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
+RulesAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RulesAutomaton.h
+QueriesAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.h
+IDAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.h
+StringAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.h
 
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
 vector
@@ -82,11 +92,23 @@ Automaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RulesAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 

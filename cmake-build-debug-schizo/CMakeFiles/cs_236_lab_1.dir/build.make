@@ -265,6 +265,71 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.cpp" -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s"
 
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o: CMakeFiles/cs_236_lab_1.dir/flags.make
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o: ../Project1_Starter_Code\ (1)/Lab1PassOffCases/IDAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o" -c "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lab1PassOffCases/IDAutomaton.cpp"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lab1PassOffCases/IDAutomaton.cpp" > "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lab1PassOffCases/IDAutomaton.cpp" -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o: CMakeFiles/cs_236_lab_1.dir/flags.make
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o: ../Project1_Starter_Code\ (1)/IDAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o" -c "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.cpp"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.cpp" > "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.i"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.cpp" -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.s"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o: CMakeFiles/cs_236_lab_1.dir/flags.make
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o: ../Project1_Starter_Code\ (1)/StringAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o" -c "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.cpp"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.cpp" > "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.i"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.cpp" -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.s"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o: CMakeFiles/cs_236_lab_1.dir/flags.make
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o: ../Project1_Starter_Code\ (1)/CommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o" -c "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.cpp"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.cpp" > "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.i"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.cpp" -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.s"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o: CMakeFiles/cs_236_lab_1.dir/flags.make
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o: ../Project1_Starter_Code\ (1)/UndefinedAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o" -c "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.cpp"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.cpp" > "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i"
+
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.cpp" -o "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s"
+
 # Object files for target cs_236_lab_1
 cs_236_lab_1_OBJECTS = \
 "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonAutomaton.cpp.o" \
@@ -282,7 +347,12 @@ cs_236_lab_1_OBJECTS = \
 "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/SchemesAutomaton.cpp.o" \
 "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.o" \
 "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RulesAutomaton.cpp.o" \
-"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o"
+"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o" \
+"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o" \
+"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o" \
+"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o" \
+"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o" \
+"CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o"
 
 # External object files for target cs_236_lab_1
 cs_236_lab_1_EXTERNAL_OBJECTS =
@@ -303,9 +373,14 @@ cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/SchemesAutom
 cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.o
 cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RulesAutomaton.cpp.o
 cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o
+cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o
+cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o
+cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o
+cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o
+cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o
 cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/build.make
 cs_236_lab_1: CMakeFiles/cs_236_lab_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable cs_236_lab_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable cs_236_lab_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cs_236_lab_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

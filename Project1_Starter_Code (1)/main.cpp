@@ -24,15 +24,21 @@ int main(int argc, char** argv) {
     }
 
     cout << "file " << filename << " read successfully!" << endl;
-    string line;
-    cout << "About to enter while" << endl;
+    string fullFile; // if not work, rename to line
+    ostringstream sstr;
+    sstr << input.rdbuf();
+    fullFile = sstr.str();
+    lexer->Run(fullFile);
+    /**cout << "About to enter while" << endl;
     while(getline(input, line)){
         istringstream iss(line);
         lexer->Run(line);
         cout << "Entered run by now :))" << endl;
-        string output = lexer->toString();
-        cout << output << endl;
     }
+     **/
+
+    string output = lexer->toString();
+    cout << output << endl;
 
     delete lexer;
 

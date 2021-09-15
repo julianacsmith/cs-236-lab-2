@@ -152,5 +152,6 @@ string Lexer::toString(){
     }
     output += "Total Tokens = ";
     output += to_string(tokens.size());
+    output += "\n";
     return output;
 };

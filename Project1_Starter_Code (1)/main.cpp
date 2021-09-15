@@ -29,13 +29,6 @@ int main(int argc, char** argv) {
     sstr << input.rdbuf();
     fullFile = sstr.str();
     lexer->Run(fullFile);
-    /**cout << "About to enter while" << endl;
-    while(getline(input, line)){
-        istringstream iss(line);
-        lexer->Run(line);
-        cout << "Entered run by now :))" << endl;
-    }
-     **/
 
     string output = lexer->toString();
     cout << output << endl;

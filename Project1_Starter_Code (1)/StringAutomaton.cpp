@@ -1,32 +1,28 @@
 #include "StringAutomaton.h"
 
 void StringAutomaton::S0(const std::string &input) {
-    char firstChar = input.at(0);
+    int i = 0;
+    char firstChar = input.at(i);
     if(firstChar == '\'') {
-        if(input.find('\'')){
-            int i = 1;
-            inputRead = 1;
+        i++;
+        char first = input.at(i);
+        while (i != input.size()){
             if(input.at(i) == '\''){
-                inputRead++;
-                i++;
-            }
-            while (input.at(i) != '\'') {
-                i++;
-                if(i == input.size()){
-                    Serr();
+                char second = input.at(i+1);
+                if(i+1 <= input.size() && input.at(i+1) == '\''){
+                    inputRead+=2;
+                    i+=2;
+                    continue;
+                } else {
+                    inputRead+=2;
                     break;
-                } else if(input.at(i) == '\''){
-                    if(i+1 != input.size() && input.at(i+1) == '\'') {
-                        inputRead+=2;
-                        i+=2;
-                    } else {
-                        inputRead++;
-                    }
-                }else {
-                    inputRead++;
                 }
             }
+            if(input.at(i) == '\n'){
+                newLines++;
+            }
             inputRead++;
+            i++;
         }
     } else{
         Serr();

@@ -17,7 +17,6 @@
 #include "CommentAutomaton.h"
 #include "UndefinedAutomaton.h"
 #include "EOFAutomaton.h"
-#include <algorithm>
 
 using namespace std;
 Lexer::Lexer() {
@@ -26,6 +25,12 @@ Lexer::Lexer() {
 
 Lexer::~Lexer() {
     // TODO: need to clean up the memory in `automata` and `tokens`
+    for(int i = 0; i < tokens.size(); i++){
+        delete tokens[i];
+    }
+    for(int i = 0; i < automata.size(); i++){
+        delete automata[i];
+    }
 }
 
 void Lexer::CreateAutomata() {
@@ -102,10 +107,15 @@ void Lexer::Run(std::string& input) {
                 lineNumber++;
             }
             maxRead++;
+            if(maxRead == input.size()){
+                break;
+            }
         }
-
         input.erase(0,maxRead);
         maxRead = 0;
+        if(input.empty()){
+            break;
+        }
 
         //Parallel Part
         for (Automaton* automaton : automata){
@@ -121,7 +131,6 @@ void Lexer::Run(std::string& input) {
             string newInput = input.substr(0,maxRead);
             Token *newToken = maxAutomaton->CreateToken(newInput, lineNumber);
             lineNumber+=maxAutomaton->NewLinesRead();
-            //lineNumber +=  count(newInput.begin(), newInput.end(), '\n');
             tokens.push_back(newToken);
         }
         else {
@@ -141,7 +150,7 @@ string Lexer::toString(){
     for (Token* token : tokens){
         output += token->toString() + "\n";
     }
-    output += "TOKENS: ";
+    output += "Total Tokens = ";
     output += to_string(tokens.size());
     return output;
 };

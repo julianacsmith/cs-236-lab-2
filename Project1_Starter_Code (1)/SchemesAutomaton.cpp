@@ -2,11 +2,18 @@
 #include <string>
 
 void SchemesAutomaton::S0(const std::string &input) {
-    std::string newInput = input.substr(index, index+7);
-    if (newInput == "Schemes") {
-        inputRead = 7;
-    }
-    else {
+    if(index+7 <= input.size()) {
+        std::string newInput = input.substr(index, index + 7);
+        if (newInput == "Schemes") {
+            int idx = input.at(newInput.size());
+            //if(input.at(newInput.size()) == ' ' || input.at(newInput.size()) == '\n' || input.at(newInput.size()) == '\''){
+            if ((idx < 65 || (idx > 90 && idx < 97) || idx > 123)) {
+                inputRead = 7;
+            }
+        } else {
+            Serr();
+        }
+    } else {
         Serr();
     }
 }

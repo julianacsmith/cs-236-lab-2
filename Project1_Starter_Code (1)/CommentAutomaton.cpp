@@ -1,39 +1,30 @@
 #include "CommentAutomaton.h"
 
  void CommentAutomaton::S0(const std::string &input) {
-    char currChar = input.at(0);
-    if(currChar == '#'){
-        currChar = input.at(1);
-        int i = 1;
-        inputRead++;
-        if(currChar == '|'){
-            i++;
-            inputRead++;
-            currChar = input.at(i);
-            while (currChar != '|') {
+    if(input.size() >= 2) {
+        char firstChar = input.at(0);
+        char secondChar = input.at(1);
+        if(firstChar == '#' && secondChar == '|'){
+            //Block Comment
+            inputRead+=2; // accounts for the 2 already read
+            for(int i = 2; i < input.size(); i++){
+                char currChar = input.at(i);
                 if(currChar == '\n'){
                     newLines++;
+                } else if(currChar == '|'){
+                    if(i+1 <= input.size() && input.at(i+1) == '#') { // reached a valid end
+                        inputRead++;
+                        break;
+                    }
                 }
-                i++;
-                if(i == input.size()){
-                    break;
-                } else {
-                    inputRead++;
-                    currChar = input.at(i);
-                }
-            }
-            inputRead+=2;
-        } else {
-            while (currChar != '\n' ) {
                 inputRead++;
-                i++;
-                if(i == input.size()){
-                    break;
-                }
-                currChar = input.at(i);
             }
-            inputRead++;
-            newLines++;
+        } else if (firstChar == '#') {
+            //Normal Comment
+            inputRead = input.find('\n');
+        } else {
+            //Not a comment
+            Serr();
         }
     } else {
         Serr();

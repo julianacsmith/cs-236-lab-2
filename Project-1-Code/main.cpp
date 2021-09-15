@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     lexer->Run(fullFile);
 
     string output = lexer->toString();
-    cout << output << endl;
+    cout << output;
 
     delete lexer;
 

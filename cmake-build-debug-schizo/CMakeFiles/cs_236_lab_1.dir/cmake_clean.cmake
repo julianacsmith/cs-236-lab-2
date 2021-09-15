@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o"
   "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommaAutomaton.cpp.o"
   "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o"
+  "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.o"
   "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.o"
   "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o"
   "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o"

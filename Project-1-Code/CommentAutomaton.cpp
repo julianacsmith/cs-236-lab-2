@@ -7,7 +7,7 @@
         if(firstChar == '#' && secondChar == '|'){
             //Block Comment
             inputRead+=2; // accounts for the 2 already read
-            for(int i = 2; i < input.size(); i++){
+            for(int unsigned i = 2; i < input.size(); i++){
                 char currChar = input.at(i);
                 if(currChar == '\n'){
                     newLines++;

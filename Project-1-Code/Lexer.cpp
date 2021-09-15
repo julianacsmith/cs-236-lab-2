@@ -25,11 +25,11 @@ Lexer::Lexer() {
 
 Lexer::~Lexer() {
     // TODO: need to clean up the memory in `automata` and `tokens`
-    for(int i = 0; i < tokens.size(); i++){
+    for(int unsigned i = 0; i < tokens.size(); i++){
         delete tokens[i];
     }
-    for(int i = 0; i < automata.size(); i++){
-        delete automata[i];
+    for(int unsigned i = 0; i < automata.size(); i++){
+        //delete automata[i];
     }
 }
 
@@ -99,7 +99,7 @@ void Lexer::Run(std::string& input) {
 
     int lineNumber = 1; // set lineNumber to 1
     while (!input.empty()){ // While there's more to tokenize
-        int maxRead = 0; // set maxRead to 0
+        int unsigned maxRead = 0; // set maxRead to 0
         Automaton* maxAutomaton = automata.at(0); //set maxAutomation tothe first automata
         //Handle whitespace
         while(input.at(maxRead) == ' ' || input.at(maxRead) == '\t' || input.at(maxRead) == '\n'){
@@ -119,7 +119,7 @@ void Lexer::Run(std::string& input) {
 
         //Parallel Part
         for (Automaton* automaton : automata){
-            int inputRead = automaton->Start(input);
+            int unsigned inputRead = automaton->Start(input);
             if(inputRead > maxRead){
                 maxRead = inputRead;
                 maxAutomaton = automaton;

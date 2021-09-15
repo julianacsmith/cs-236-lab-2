@@ -258,6 +258,33 @@ Project1_Starter_Code_(1)/CommentAutomaton.cpp.s:
 	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.s"
 .PHONY : Project1_Starter_Code_(1)/CommentAutomaton.cpp.s
 
+Project1_Starter_Code_(1)/EOFAutomaton.o: Project1_Starter_Code_(1)/EOFAutomaton.cpp.o
+
+.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.o
+
+# target to build an object file
+Project1_Starter_Code_(1)/EOFAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.o"
+.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.cpp.o
+
+Project1_Starter_Code_(1)/EOFAutomaton.i: Project1_Starter_Code_(1)/EOFAutomaton.cpp.i
+
+.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.i
+
+# target to preprocess a source file
+Project1_Starter_Code_(1)/EOFAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.i"
+.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.cpp.i
+
+Project1_Starter_Code_(1)/EOFAutomaton.s: Project1_Starter_Code_(1)/EOFAutomaton.cpp.s
+
+.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.s
+
+# target to generate assembly for a file
+Project1_Starter_Code_(1)/EOFAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.s"
+.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.cpp.s
+
 Project1_Starter_Code_(1)/FactsAutomaton.o: Project1_Starter_Code_(1)/FactsAutomaton.cpp.o
 
 .PHONY : Project1_Starter_Code_(1)/FactsAutomaton.o
@@ -714,6 +741,9 @@ help:
 	@echo "... Project1_Starter_Code_(1)/CommentAutomaton.o"
 	@echo "... Project1_Starter_Code_(1)/CommentAutomaton.i"
 	@echo "... Project1_Starter_Code_(1)/CommentAutomaton.s"
+	@echo "... Project1_Starter_Code_(1)/EOFAutomaton.o"
+	@echo "... Project1_Starter_Code_(1)/EOFAutomaton.i"
+	@echo "... Project1_Starter_Code_(1)/EOFAutomaton.s"
 	@echo "... Project1_Starter_Code_(1)/FactsAutomaton.o"
 	@echo "... Project1_Starter_Code_(1)/FactsAutomaton.i"
 	@echo "... Project1_Starter_Code_(1)/FactsAutomaton.s"

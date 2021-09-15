@@ -22,8 +22,7 @@ int main(int argc, char** argv) {
         cout << "file " << filename << " could not be found or opened." << endl;
         return 1;
     }
-
-    cout << "file " << filename << " read successfully!" << endl;
+ 
     string fullFile; // if not work, rename to line
     ostringstream sstr;
     sstr << input.rdbuf();

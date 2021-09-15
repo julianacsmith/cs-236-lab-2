@@ -18,8 +18,21 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommaAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.cpp
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.cpp
@@ -38,6 +51,8 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lexer.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/LeftParenAutomaton.h
@@ -52,6 +67,7 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lexer.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/MultiplyAutomaton.cpp
@@ -65,7 +81,10 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/PeriodAutomaton.cpp.o
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QMarkAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QMarkAutomaton.cpp
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RightParenAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/RightParenAutomaton.cpp
@@ -82,12 +101,17 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/SchemesAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/SchemesAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Token.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.cpp
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
-CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/main.cpp.o
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
- /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.h
+CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/main.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/main.cpp

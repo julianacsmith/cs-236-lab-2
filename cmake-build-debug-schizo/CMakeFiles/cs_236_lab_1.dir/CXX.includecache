@@ -26,6 +26,14 @@ Automaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/FactsAutomaton.h
 Automaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
@@ -71,6 +79,12 @@ IDAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/IDAutomaton.h
 StringAutomaton.h
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/StringAutomaton.h
+CommentAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.h
+UndefinedAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.h
+EOFAutomaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.h
 
 /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
 vector
@@ -117,4 +131,8 @@ iostream
 -
 string
 -
+
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.h
+Automaton.h
+/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
 

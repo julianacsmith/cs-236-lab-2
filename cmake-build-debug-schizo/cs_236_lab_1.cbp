@@ -117,6 +117,9 @@
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.h">
 			<Option target="cs_236_lab_1"/>
 		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.cpp">
+			<Option target="cs_236_lab_1"/>
+		</Unit>
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/EOFAutomaton.h">
 			<Option target="cs_236_lab_1"/>
 		</Unit>

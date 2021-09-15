@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories("Project1_Starter_Code (1)")
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
+
 add_executable(cs_236_lab_1
         "Project1_Starter_Code (1)/Automaton.h"
         "Project1_Starter_Code (1)/ColonAutomaton.cpp"

@@ -2,7 +2,6 @@
 
 void StringAutomaton::S0(const std::string &input) {
     int unsigned i = 0;
-    int unsigned cnt = 0;
     char firstChar = input.at(i);
     if(firstChar == '\'') {
         i++;
@@ -12,11 +11,9 @@ void StringAutomaton::S0(const std::string &input) {
                 if(i+1 <= input.size() && input.at(i+1) == '\''){
                     inputRead+=2;
                     i+=2;
-                    cnt+=2;
                     continue;
                 } else {
                     inputRead+=2;
-                    cnt+=2;
                     break;
                 }
             } else if(input.at(i) == '\n'){

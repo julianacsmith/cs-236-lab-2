@@ -13,7 +13,7 @@
                     newLines++;
                 } else if(currChar == '|'){
                     if(i+1 <= input.size() && input.at(i+1) == '#') { // reached a valid end
-                        inputRead++;
+                        inputRead+=2;
                         break;
                     }
                 }

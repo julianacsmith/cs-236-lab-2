@@ -123,599 +123,572 @@ cs_236_lab_1/fast:
 	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/build
 .PHONY : cs_236_lab_1/fast
 
-Project1_Starter_Code_(1)/AddAutomaton.o: Project1_Starter_Code_(1)/AddAutomaton.cpp.o
+Project-1-Code/AddAutomaton.o: Project-1-Code/AddAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/AddAutomaton.o
-
-# target to build an object file
-Project1_Starter_Code_(1)/AddAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/AddAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/AddAutomaton.cpp.o
-
-Project1_Starter_Code_(1)/AddAutomaton.i: Project1_Starter_Code_(1)/AddAutomaton.cpp.i
-
-.PHONY : Project1_Starter_Code_(1)/AddAutomaton.i
-
-# target to preprocess a source file
-Project1_Starter_Code_(1)/AddAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/AddAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/AddAutomaton.cpp.i
-
-Project1_Starter_Code_(1)/AddAutomaton.s: Project1_Starter_Code_(1)/AddAutomaton.cpp.s
-
-.PHONY : Project1_Starter_Code_(1)/AddAutomaton.s
-
-# target to generate assembly for a file
-Project1_Starter_Code_(1)/AddAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/AddAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/AddAutomaton.cpp.s
-
-Project1_Starter_Code_(1)/ColonAutomaton.o: Project1_Starter_Code_(1)/ColonAutomaton.cpp.o
-
-.PHONY : Project1_Starter_Code_(1)/ColonAutomaton.o
+.PHONY : Project-1-Code/AddAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/ColonAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/ColonAutomaton.cpp.o
+Project-1-Code/AddAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/AddAutomaton.cpp.o
+.PHONY : Project-1-Code/AddAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/ColonAutomaton.i: Project1_Starter_Code_(1)/ColonAutomaton.cpp.i
+Project-1-Code/AddAutomaton.i: Project-1-Code/AddAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/ColonAutomaton.i
+.PHONY : Project-1-Code/AddAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/ColonAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/ColonAutomaton.cpp.i
+Project-1-Code/AddAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/AddAutomaton.cpp.i
+.PHONY : Project-1-Code/AddAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/ColonAutomaton.s: Project1_Starter_Code_(1)/ColonAutomaton.cpp.s
+Project-1-Code/AddAutomaton.s: Project-1-Code/AddAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/ColonAutomaton.s
+.PHONY : Project-1-Code/AddAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/ColonAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/ColonAutomaton.cpp.s
+Project-1-Code/AddAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/AddAutomaton.cpp.s
+.PHONY : Project-1-Code/AddAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/ColonDashAutomaton.o: Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o
+Project-1-Code/ColonAutomaton.o: Project-1-Code/ColonAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/ColonDashAutomaton.o
+.PHONY : Project-1-Code/ColonAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o
+Project-1-Code/ColonAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/ColonAutomaton.cpp.o
+.PHONY : Project-1-Code/ColonAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/ColonDashAutomaton.i: Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.i
+Project-1-Code/ColonAutomaton.i: Project-1-Code/ColonAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/ColonDashAutomaton.i
+.PHONY : Project-1-Code/ColonAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.i
+Project-1-Code/ColonAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/ColonAutomaton.cpp.i
+.PHONY : Project-1-Code/ColonAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/ColonDashAutomaton.s: Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.s
+Project-1-Code/ColonAutomaton.s: Project-1-Code/ColonAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/ColonDashAutomaton.s
+.PHONY : Project-1-Code/ColonAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.s
+Project-1-Code/ColonAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/ColonAutomaton.cpp.s
+.PHONY : Project-1-Code/ColonAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/CommaAutomaton.o: Project1_Starter_Code_(1)/CommaAutomaton.cpp.o
+Project-1-Code/ColonDashAutomaton.o: Project-1-Code/ColonDashAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/CommaAutomaton.o
+.PHONY : Project-1-Code/ColonDashAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/CommaAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommaAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/CommaAutomaton.cpp.o
+Project-1-Code/ColonDashAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/ColonDashAutomaton.cpp.o
+.PHONY : Project-1-Code/ColonDashAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/CommaAutomaton.i: Project1_Starter_Code_(1)/CommaAutomaton.cpp.i
+Project-1-Code/ColonDashAutomaton.i: Project-1-Code/ColonDashAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/CommaAutomaton.i
+.PHONY : Project-1-Code/ColonDashAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/CommaAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommaAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/CommaAutomaton.cpp.i
+Project-1-Code/ColonDashAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/ColonDashAutomaton.cpp.i
+.PHONY : Project-1-Code/ColonDashAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/CommaAutomaton.s: Project1_Starter_Code_(1)/CommaAutomaton.cpp.s
+Project-1-Code/ColonDashAutomaton.s: Project-1-Code/ColonDashAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/CommaAutomaton.s
+.PHONY : Project-1-Code/ColonDashAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/CommaAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommaAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/CommaAutomaton.cpp.s
+Project-1-Code/ColonDashAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/ColonDashAutomaton.cpp.s
+.PHONY : Project-1-Code/ColonDashAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/CommentAutomaton.o: Project1_Starter_Code_(1)/CommentAutomaton.cpp.o
+Project-1-Code/CommaAutomaton.o: Project-1-Code/CommaAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/CommentAutomaton.o
+.PHONY : Project-1-Code/CommaAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/CommentAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/CommentAutomaton.cpp.o
+Project-1-Code/CommaAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/CommaAutomaton.cpp.o
+.PHONY : Project-1-Code/CommaAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/CommentAutomaton.i: Project1_Starter_Code_(1)/CommentAutomaton.cpp.i
+Project-1-Code/CommaAutomaton.i: Project-1-Code/CommaAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/CommentAutomaton.i
+.PHONY : Project-1-Code/CommaAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/CommentAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/CommentAutomaton.cpp.i
+Project-1-Code/CommaAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/CommaAutomaton.cpp.i
+.PHONY : Project-1-Code/CommaAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/CommentAutomaton.s: Project1_Starter_Code_(1)/CommentAutomaton.cpp.s
+Project-1-Code/CommaAutomaton.s: Project-1-Code/CommaAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/CommentAutomaton.s
+.PHONY : Project-1-Code/CommaAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/CommentAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/CommentAutomaton.cpp.s
+Project-1-Code/CommaAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/CommaAutomaton.cpp.s
+.PHONY : Project-1-Code/CommaAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/EOFAutomaton.o: Project1_Starter_Code_(1)/EOFAutomaton.cpp.o
+Project-1-Code/CommentAutomaton.o: Project-1-Code/CommentAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.o
+.PHONY : Project-1-Code/CommentAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/EOFAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.cpp.o
+Project-1-Code/CommentAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/CommentAutomaton.cpp.o
+.PHONY : Project-1-Code/CommentAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/EOFAutomaton.i: Project1_Starter_Code_(1)/EOFAutomaton.cpp.i
+Project-1-Code/CommentAutomaton.i: Project-1-Code/CommentAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.i
+.PHONY : Project-1-Code/CommentAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/EOFAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.cpp.i
+Project-1-Code/CommentAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/CommentAutomaton.cpp.i
+.PHONY : Project-1-Code/CommentAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/EOFAutomaton.s: Project1_Starter_Code_(1)/EOFAutomaton.cpp.s
+Project-1-Code/CommentAutomaton.s: Project-1-Code/CommentAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.s
+.PHONY : Project-1-Code/CommentAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/EOFAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/EOFAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/EOFAutomaton.cpp.s
+Project-1-Code/CommentAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/CommentAutomaton.cpp.s
+.PHONY : Project-1-Code/CommentAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/FactsAutomaton.o: Project1_Starter_Code_(1)/FactsAutomaton.cpp.o
+Project-1-Code/EOFAutomaton.o: Project-1-Code/EOFAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/FactsAutomaton.o
+.PHONY : Project-1-Code/EOFAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/FactsAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/FactsAutomaton.cpp.o
+Project-1-Code/EOFAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/EOFAutomaton.cpp.o
+.PHONY : Project-1-Code/EOFAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/FactsAutomaton.i: Project1_Starter_Code_(1)/FactsAutomaton.cpp.i
+Project-1-Code/EOFAutomaton.i: Project-1-Code/EOFAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/FactsAutomaton.i
+.PHONY : Project-1-Code/EOFAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/FactsAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/FactsAutomaton.cpp.i
+Project-1-Code/EOFAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/EOFAutomaton.cpp.i
+.PHONY : Project-1-Code/EOFAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/FactsAutomaton.s: Project1_Starter_Code_(1)/FactsAutomaton.cpp.s
+Project-1-Code/EOFAutomaton.s: Project-1-Code/EOFAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/FactsAutomaton.s
+.PHONY : Project-1-Code/EOFAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/FactsAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/FactsAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/FactsAutomaton.cpp.s
+Project-1-Code/EOFAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/EOFAutomaton.cpp.s
+.PHONY : Project-1-Code/EOFAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/IDAutomaton.o: Project1_Starter_Code_(1)/IDAutomaton.cpp.o
+Project-1-Code/FactsAutomaton.o: Project-1-Code/FactsAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/IDAutomaton.o
+.PHONY : Project-1-Code/FactsAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/IDAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/IDAutomaton.cpp.o
+Project-1-Code/FactsAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/FactsAutomaton.cpp.o
+.PHONY : Project-1-Code/FactsAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/IDAutomaton.i: Project1_Starter_Code_(1)/IDAutomaton.cpp.i
+Project-1-Code/FactsAutomaton.i: Project-1-Code/FactsAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/IDAutomaton.i
+.PHONY : Project-1-Code/FactsAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/IDAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/IDAutomaton.cpp.i
+Project-1-Code/FactsAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/FactsAutomaton.cpp.i
+.PHONY : Project-1-Code/FactsAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/IDAutomaton.s: Project1_Starter_Code_(1)/IDAutomaton.cpp.s
+Project-1-Code/FactsAutomaton.s: Project-1-Code/FactsAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/IDAutomaton.s
+.PHONY : Project-1-Code/FactsAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/IDAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/IDAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/IDAutomaton.cpp.s
+Project-1-Code/FactsAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/FactsAutomaton.cpp.s
+.PHONY : Project-1-Code/FactsAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.o: Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o
+Project-1-Code/IDAutomaton.o: Project-1-Code/IDAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.o
+.PHONY : Project-1-Code/IDAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.o
+Project-1-Code/IDAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/IDAutomaton.cpp.o
+.PHONY : Project-1-Code/IDAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.i: Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i
+Project-1-Code/IDAutomaton.i: Project-1-Code/IDAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.i
+.PHONY : Project-1-Code/IDAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.i
+Project-1-Code/IDAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/IDAutomaton.cpp.i
+.PHONY : Project-1-Code/IDAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.s: Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s
+Project-1-Code/IDAutomaton.s: Project-1-Code/IDAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.s
+.PHONY : Project-1-Code/IDAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.cpp.s
+Project-1-Code/IDAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/IDAutomaton.cpp.s
+.PHONY : Project-1-Code/IDAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/LeftParenAutomaton.o: Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.o
+Project-1-Code/LeftParenAutomaton.o: Project-1-Code/LeftParenAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/LeftParenAutomaton.o
+.PHONY : Project-1-Code/LeftParenAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.o
+Project-1-Code/LeftParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/LeftParenAutomaton.cpp.o
+.PHONY : Project-1-Code/LeftParenAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/LeftParenAutomaton.i: Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.i
+Project-1-Code/LeftParenAutomaton.i: Project-1-Code/LeftParenAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/LeftParenAutomaton.i
+.PHONY : Project-1-Code/LeftParenAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.i
+Project-1-Code/LeftParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/LeftParenAutomaton.cpp.i
+.PHONY : Project-1-Code/LeftParenAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/LeftParenAutomaton.s: Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.s
+Project-1-Code/LeftParenAutomaton.s: Project-1-Code/LeftParenAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/LeftParenAutomaton.s
+.PHONY : Project-1-Code/LeftParenAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/LeftParenAutomaton.cpp.s
+Project-1-Code/LeftParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/LeftParenAutomaton.cpp.s
+.PHONY : Project-1-Code/LeftParenAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/Lexer.o: Project1_Starter_Code_(1)/Lexer.cpp.o
+Project-1-Code/Lexer.o: Project-1-Code/Lexer.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/Lexer.o
+.PHONY : Project-1-Code/Lexer.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/Lexer.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lexer.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/Lexer.cpp.o
+Project-1-Code/Lexer.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/Lexer.cpp.o
+.PHONY : Project-1-Code/Lexer.cpp.o
 
-Project1_Starter_Code_(1)/Lexer.i: Project1_Starter_Code_(1)/Lexer.cpp.i
+Project-1-Code/Lexer.i: Project-1-Code/Lexer.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/Lexer.i
+.PHONY : Project-1-Code/Lexer.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/Lexer.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lexer.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/Lexer.cpp.i
+Project-1-Code/Lexer.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/Lexer.cpp.i
+.PHONY : Project-1-Code/Lexer.cpp.i
 
-Project1_Starter_Code_(1)/Lexer.s: Project1_Starter_Code_(1)/Lexer.cpp.s
+Project-1-Code/Lexer.s: Project-1-Code/Lexer.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/Lexer.s
+.PHONY : Project-1-Code/Lexer.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/Lexer.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Lexer.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/Lexer.cpp.s
+Project-1-Code/Lexer.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/Lexer.cpp.s
+.PHONY : Project-1-Code/Lexer.cpp.s
 
-Project1_Starter_Code_(1)/MultiplyAutomaton.o: Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.o
+Project-1-Code/MultiplyAutomaton.o: Project-1-Code/MultiplyAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/MultiplyAutomaton.o
+.PHONY : Project-1-Code/MultiplyAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.o
+Project-1-Code/MultiplyAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/MultiplyAutomaton.cpp.o
+.PHONY : Project-1-Code/MultiplyAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/MultiplyAutomaton.i: Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.i
+Project-1-Code/MultiplyAutomaton.i: Project-1-Code/MultiplyAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/MultiplyAutomaton.i
+.PHONY : Project-1-Code/MultiplyAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.i
+Project-1-Code/MultiplyAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/MultiplyAutomaton.cpp.i
+.PHONY : Project-1-Code/MultiplyAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/MultiplyAutomaton.s: Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.s
+Project-1-Code/MultiplyAutomaton.s: Project-1-Code/MultiplyAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/MultiplyAutomaton.s
+.PHONY : Project-1-Code/MultiplyAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/MultiplyAutomaton.cpp.s
+Project-1-Code/MultiplyAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/MultiplyAutomaton.cpp.s
+.PHONY : Project-1-Code/MultiplyAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/PeriodAutomaton.o: Project1_Starter_Code_(1)/PeriodAutomaton.cpp.o
+Project-1-Code/PeriodAutomaton.o: Project-1-Code/PeriodAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/PeriodAutomaton.o
+.PHONY : Project-1-Code/PeriodAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/PeriodAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/PeriodAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/PeriodAutomaton.cpp.o
+Project-1-Code/PeriodAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/PeriodAutomaton.cpp.o
+.PHONY : Project-1-Code/PeriodAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/PeriodAutomaton.i: Project1_Starter_Code_(1)/PeriodAutomaton.cpp.i
+Project-1-Code/PeriodAutomaton.i: Project-1-Code/PeriodAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/PeriodAutomaton.i
+.PHONY : Project-1-Code/PeriodAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/PeriodAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/PeriodAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/PeriodAutomaton.cpp.i
+Project-1-Code/PeriodAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/PeriodAutomaton.cpp.i
+.PHONY : Project-1-Code/PeriodAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/PeriodAutomaton.s: Project1_Starter_Code_(1)/PeriodAutomaton.cpp.s
+Project-1-Code/PeriodAutomaton.s: Project-1-Code/PeriodAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/PeriodAutomaton.s
+.PHONY : Project-1-Code/PeriodAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/PeriodAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/PeriodAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/PeriodAutomaton.cpp.s
+Project-1-Code/PeriodAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/PeriodAutomaton.cpp.s
+.PHONY : Project-1-Code/PeriodAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/QMarkAutomaton.o: Project1_Starter_Code_(1)/QMarkAutomaton.cpp.o
+Project-1-Code/QMarkAutomaton.o: Project-1-Code/QMarkAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/QMarkAutomaton.o
+.PHONY : Project-1-Code/QMarkAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/QMarkAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QMarkAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/QMarkAutomaton.cpp.o
+Project-1-Code/QMarkAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/QMarkAutomaton.cpp.o
+.PHONY : Project-1-Code/QMarkAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/QMarkAutomaton.i: Project1_Starter_Code_(1)/QMarkAutomaton.cpp.i
+Project-1-Code/QMarkAutomaton.i: Project-1-Code/QMarkAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/QMarkAutomaton.i
+.PHONY : Project-1-Code/QMarkAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/QMarkAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QMarkAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/QMarkAutomaton.cpp.i
+Project-1-Code/QMarkAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/QMarkAutomaton.cpp.i
+.PHONY : Project-1-Code/QMarkAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/QMarkAutomaton.s: Project1_Starter_Code_(1)/QMarkAutomaton.cpp.s
+Project-1-Code/QMarkAutomaton.s: Project-1-Code/QMarkAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/QMarkAutomaton.s
+.PHONY : Project-1-Code/QMarkAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/QMarkAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QMarkAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/QMarkAutomaton.cpp.s
+Project-1-Code/QMarkAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/QMarkAutomaton.cpp.s
+.PHONY : Project-1-Code/QMarkAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/QueriesAutomaton.o: Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o
+Project-1-Code/QueriesAutomaton.o: Project-1-Code/QueriesAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/QueriesAutomaton.o
+.PHONY : Project-1-Code/QueriesAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o
+Project-1-Code/QueriesAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/QueriesAutomaton.cpp.o
+.PHONY : Project-1-Code/QueriesAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/QueriesAutomaton.i: Project1_Starter_Code_(1)/QueriesAutomaton.cpp.i
+Project-1-Code/QueriesAutomaton.i: Project-1-Code/QueriesAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/QueriesAutomaton.i
+.PHONY : Project-1-Code/QueriesAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/QueriesAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/QueriesAutomaton.cpp.i
+Project-1-Code/QueriesAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/QueriesAutomaton.cpp.i
+.PHONY : Project-1-Code/QueriesAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/QueriesAutomaton.s: Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s
+Project-1-Code/QueriesAutomaton.s: Project-1-Code/QueriesAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/QueriesAutomaton.s
+.PHONY : Project-1-Code/QueriesAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/QueriesAutomaton.cpp.s
+Project-1-Code/QueriesAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/QueriesAutomaton.cpp.s
+.PHONY : Project-1-Code/QueriesAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/RightParenAutomaton.o: Project1_Starter_Code_(1)/RightParenAutomaton.cpp.o
+Project-1-Code/RightParenAutomaton.o: Project-1-Code/RightParenAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/RightParenAutomaton.o
+.PHONY : Project-1-Code/RightParenAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/RightParenAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RightParenAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/RightParenAutomaton.cpp.o
+Project-1-Code/RightParenAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/RightParenAutomaton.cpp.o
+.PHONY : Project-1-Code/RightParenAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/RightParenAutomaton.i: Project1_Starter_Code_(1)/RightParenAutomaton.cpp.i
+Project-1-Code/RightParenAutomaton.i: Project-1-Code/RightParenAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/RightParenAutomaton.i
+.PHONY : Project-1-Code/RightParenAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/RightParenAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RightParenAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/RightParenAutomaton.cpp.i
+Project-1-Code/RightParenAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/RightParenAutomaton.cpp.i
+.PHONY : Project-1-Code/RightParenAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/RightParenAutomaton.s: Project1_Starter_Code_(1)/RightParenAutomaton.cpp.s
+Project-1-Code/RightParenAutomaton.s: Project-1-Code/RightParenAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/RightParenAutomaton.s
+.PHONY : Project-1-Code/RightParenAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/RightParenAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RightParenAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/RightParenAutomaton.cpp.s
+Project-1-Code/RightParenAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/RightParenAutomaton.cpp.s
+.PHONY : Project-1-Code/RightParenAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/RulesAutomaton.o: Project1_Starter_Code_(1)/RulesAutomaton.cpp.o
+Project-1-Code/RulesAutomaton.o: Project-1-Code/RulesAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/RulesAutomaton.o
+.PHONY : Project-1-Code/RulesAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/RulesAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RulesAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/RulesAutomaton.cpp.o
+Project-1-Code/RulesAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/RulesAutomaton.cpp.o
+.PHONY : Project-1-Code/RulesAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/RulesAutomaton.i: Project1_Starter_Code_(1)/RulesAutomaton.cpp.i
+Project-1-Code/RulesAutomaton.i: Project-1-Code/RulesAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/RulesAutomaton.i
+.PHONY : Project-1-Code/RulesAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/RulesAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RulesAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/RulesAutomaton.cpp.i
+Project-1-Code/RulesAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/RulesAutomaton.cpp.i
+.PHONY : Project-1-Code/RulesAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/RulesAutomaton.s: Project1_Starter_Code_(1)/RulesAutomaton.cpp.s
+Project-1-Code/RulesAutomaton.s: Project-1-Code/RulesAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/RulesAutomaton.s
+.PHONY : Project-1-Code/RulesAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/RulesAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/RulesAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/RulesAutomaton.cpp.s
+Project-1-Code/RulesAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/RulesAutomaton.cpp.s
+.PHONY : Project-1-Code/RulesAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/SchemesAutomaton.o: Project1_Starter_Code_(1)/SchemesAutomaton.cpp.o
+Project-1-Code/SchemesAutomaton.o: Project-1-Code/SchemesAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/SchemesAutomaton.o
+.PHONY : Project-1-Code/SchemesAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/SchemesAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/SchemesAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/SchemesAutomaton.cpp.o
+Project-1-Code/SchemesAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/SchemesAutomaton.cpp.o
+.PHONY : Project-1-Code/SchemesAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/SchemesAutomaton.i: Project1_Starter_Code_(1)/SchemesAutomaton.cpp.i
+Project-1-Code/SchemesAutomaton.i: Project-1-Code/SchemesAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/SchemesAutomaton.i
+.PHONY : Project-1-Code/SchemesAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/SchemesAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/SchemesAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/SchemesAutomaton.cpp.i
+Project-1-Code/SchemesAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/SchemesAutomaton.cpp.i
+.PHONY : Project-1-Code/SchemesAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/SchemesAutomaton.s: Project1_Starter_Code_(1)/SchemesAutomaton.cpp.s
+Project-1-Code/SchemesAutomaton.s: Project-1-Code/SchemesAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/SchemesAutomaton.s
+.PHONY : Project-1-Code/SchemesAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/SchemesAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/SchemesAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/SchemesAutomaton.cpp.s
+Project-1-Code/SchemesAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/SchemesAutomaton.cpp.s
+.PHONY : Project-1-Code/SchemesAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/StringAutomaton.o: Project1_Starter_Code_(1)/StringAutomaton.cpp.o
+Project-1-Code/StringAutomaton.o: Project-1-Code/StringAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/StringAutomaton.o
+.PHONY : Project-1-Code/StringAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/StringAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/StringAutomaton.cpp.o
+Project-1-Code/StringAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/StringAutomaton.cpp.o
+.PHONY : Project-1-Code/StringAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/StringAutomaton.i: Project1_Starter_Code_(1)/StringAutomaton.cpp.i
+Project-1-Code/StringAutomaton.i: Project-1-Code/StringAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/StringAutomaton.i
+.PHONY : Project-1-Code/StringAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/StringAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/StringAutomaton.cpp.i
+Project-1-Code/StringAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/StringAutomaton.cpp.i
+.PHONY : Project-1-Code/StringAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/StringAutomaton.s: Project1_Starter_Code_(1)/StringAutomaton.cpp.s
+Project-1-Code/StringAutomaton.s: Project-1-Code/StringAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/StringAutomaton.s
+.PHONY : Project-1-Code/StringAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/StringAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/StringAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/StringAutomaton.cpp.s
+Project-1-Code/StringAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/StringAutomaton.cpp.s
+.PHONY : Project-1-Code/StringAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/Token.o: Project1_Starter_Code_(1)/Token.cpp.o
+Project-1-Code/Token.o: Project-1-Code/Token.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/Token.o
+.PHONY : Project-1-Code/Token.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/Token.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Token.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/Token.cpp.o
+Project-1-Code/Token.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/Token.cpp.o
+.PHONY : Project-1-Code/Token.cpp.o
 
-Project1_Starter_Code_(1)/Token.i: Project1_Starter_Code_(1)/Token.cpp.i
+Project-1-Code/Token.i: Project-1-Code/Token.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/Token.i
+.PHONY : Project-1-Code/Token.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/Token.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Token.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/Token.cpp.i
+Project-1-Code/Token.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/Token.cpp.i
+.PHONY : Project-1-Code/Token.cpp.i
 
-Project1_Starter_Code_(1)/Token.s: Project1_Starter_Code_(1)/Token.cpp.s
+Project-1-Code/Token.s: Project-1-Code/Token.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/Token.s
+.PHONY : Project-1-Code/Token.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/Token.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/Token.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/Token.cpp.s
+Project-1-Code/Token.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/Token.cpp.s
+.PHONY : Project-1-Code/Token.cpp.s
 
-Project1_Starter_Code_(1)/UndefinedAutomaton.o: Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o
+Project-1-Code/UndefinedAutomaton.o: Project-1-Code/UndefinedAutomaton.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/UndefinedAutomaton.o
+.PHONY : Project-1-Code/UndefinedAutomaton.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o
+Project-1-Code/UndefinedAutomaton.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/UndefinedAutomaton.cpp.o
+.PHONY : Project-1-Code/UndefinedAutomaton.cpp.o
 
-Project1_Starter_Code_(1)/UndefinedAutomaton.i: Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i
+Project-1-Code/UndefinedAutomaton.i: Project-1-Code/UndefinedAutomaton.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/UndefinedAutomaton.i
+.PHONY : Project-1-Code/UndefinedAutomaton.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.i
+Project-1-Code/UndefinedAutomaton.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/UndefinedAutomaton.cpp.i
+.PHONY : Project-1-Code/UndefinedAutomaton.cpp.i
 
-Project1_Starter_Code_(1)/UndefinedAutomaton.s: Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s
+Project-1-Code/UndefinedAutomaton.s: Project-1-Code/UndefinedAutomaton.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/UndefinedAutomaton.s
+.PHONY : Project-1-Code/UndefinedAutomaton.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.s
+Project-1-Code/UndefinedAutomaton.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/UndefinedAutomaton.cpp.s
+.PHONY : Project-1-Code/UndefinedAutomaton.cpp.s
 
-Project1_Starter_Code_(1)/main.o: Project1_Starter_Code_(1)/main.cpp.o
+Project-1-Code/main.o: Project-1-Code/main.cpp.o
 
-.PHONY : Project1_Starter_Code_(1)/main.o
+.PHONY : Project-1-Code/main.o
 
 # target to build an object file
-Project1_Starter_Code_(1)/main.cpp.o:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/main.cpp.o"
-.PHONY : Project1_Starter_Code_(1)/main.cpp.o
+Project-1-Code/main.cpp.o:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/main.cpp.o
+.PHONY : Project-1-Code/main.cpp.o
 
-Project1_Starter_Code_(1)/main.i: Project1_Starter_Code_(1)/main.cpp.i
+Project-1-Code/main.i: Project-1-Code/main.cpp.i
 
-.PHONY : Project1_Starter_Code_(1)/main.i
+.PHONY : Project-1-Code/main.i
 
 # target to preprocess a source file
-Project1_Starter_Code_(1)/main.cpp.i:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/main.cpp.i"
-.PHONY : Project1_Starter_Code_(1)/main.cpp.i
+Project-1-Code/main.cpp.i:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/main.cpp.i
+.PHONY : Project-1-Code/main.cpp.i
 
-Project1_Starter_Code_(1)/main.s: Project1_Starter_Code_(1)/main.cpp.s
+Project-1-Code/main.s: Project-1-Code/main.cpp.s
 
-.PHONY : Project1_Starter_Code_(1)/main.s
+.PHONY : Project-1-Code/main.s
 
 # target to generate assembly for a file
-Project1_Starter_Code_(1)/main.cpp.s:
-	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make "CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/main.cpp.s"
-.PHONY : Project1_Starter_Code_(1)/main.cpp.s
+Project-1-Code/main.cpp.s:
+	$(MAKE) -f CMakeFiles/cs_236_lab_1.dir/build.make CMakeFiles/cs_236_lab_1.dir/Project-1-Code/main.cpp.s
+.PHONY : Project-1-Code/main.cpp.s
 
 # Help Target
 help:
@@ -726,72 +699,69 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cs_236_lab_1"
-	@echo "... Project1_Starter_Code_(1)/AddAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/AddAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/AddAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/ColonAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/ColonAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/ColonAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/ColonDashAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/ColonDashAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/ColonDashAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/CommaAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/CommaAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/CommaAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/CommentAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/CommentAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/CommentAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/EOFAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/EOFAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/EOFAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/FactsAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/FactsAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/FactsAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/IDAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/IDAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/IDAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/Lab1PassOffCases/IDAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/LeftParenAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/LeftParenAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/LeftParenAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/Lexer.o"
-	@echo "... Project1_Starter_Code_(1)/Lexer.i"
-	@echo "... Project1_Starter_Code_(1)/Lexer.s"
-	@echo "... Project1_Starter_Code_(1)/MultiplyAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/MultiplyAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/MultiplyAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/PeriodAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/PeriodAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/PeriodAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/QMarkAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/QMarkAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/QMarkAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/QueriesAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/QueriesAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/QueriesAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/RightParenAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/RightParenAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/RightParenAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/RulesAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/RulesAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/RulesAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/SchemesAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/SchemesAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/SchemesAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/StringAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/StringAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/StringAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/Token.o"
-	@echo "... Project1_Starter_Code_(1)/Token.i"
-	@echo "... Project1_Starter_Code_(1)/Token.s"
-	@echo "... Project1_Starter_Code_(1)/UndefinedAutomaton.o"
-	@echo "... Project1_Starter_Code_(1)/UndefinedAutomaton.i"
-	@echo "... Project1_Starter_Code_(1)/UndefinedAutomaton.s"
-	@echo "... Project1_Starter_Code_(1)/main.o"
-	@echo "... Project1_Starter_Code_(1)/main.i"
-	@echo "... Project1_Starter_Code_(1)/main.s"
+	@echo "... Project-1-Code/AddAutomaton.o"
+	@echo "... Project-1-Code/AddAutomaton.i"
+	@echo "... Project-1-Code/AddAutomaton.s"
+	@echo "... Project-1-Code/ColonAutomaton.o"
+	@echo "... Project-1-Code/ColonAutomaton.i"
+	@echo "... Project-1-Code/ColonAutomaton.s"
+	@echo "... Project-1-Code/ColonDashAutomaton.o"
+	@echo "... Project-1-Code/ColonDashAutomaton.i"
+	@echo "... Project-1-Code/ColonDashAutomaton.s"
+	@echo "... Project-1-Code/CommaAutomaton.o"
+	@echo "... Project-1-Code/CommaAutomaton.i"
+	@echo "... Project-1-Code/CommaAutomaton.s"
+	@echo "... Project-1-Code/CommentAutomaton.o"
+	@echo "... Project-1-Code/CommentAutomaton.i"
+	@echo "... Project-1-Code/CommentAutomaton.s"
+	@echo "... Project-1-Code/EOFAutomaton.o"
+	@echo "... Project-1-Code/EOFAutomaton.i"
+	@echo "... Project-1-Code/EOFAutomaton.s"
+	@echo "... Project-1-Code/FactsAutomaton.o"
+	@echo "... Project-1-Code/FactsAutomaton.i"
+	@echo "... Project-1-Code/FactsAutomaton.s"
+	@echo "... Project-1-Code/IDAutomaton.o"
+	@echo "... Project-1-Code/IDAutomaton.i"
+	@echo "... Project-1-Code/IDAutomaton.s"
+	@echo "... Project-1-Code/LeftParenAutomaton.o"
+	@echo "... Project-1-Code/LeftParenAutomaton.i"
+	@echo "... Project-1-Code/LeftParenAutomaton.s"
+	@echo "... Project-1-Code/Lexer.o"
+	@echo "... Project-1-Code/Lexer.i"
+	@echo "... Project-1-Code/Lexer.s"
+	@echo "... Project-1-Code/MultiplyAutomaton.o"
+	@echo "... Project-1-Code/MultiplyAutomaton.i"
+	@echo "... Project-1-Code/MultiplyAutomaton.s"
+	@echo "... Project-1-Code/PeriodAutomaton.o"
+	@echo "... Project-1-Code/PeriodAutomaton.i"
+	@echo "... Project-1-Code/PeriodAutomaton.s"
+	@echo "... Project-1-Code/QMarkAutomaton.o"
+	@echo "... Project-1-Code/QMarkAutomaton.i"
+	@echo "... Project-1-Code/QMarkAutomaton.s"
+	@echo "... Project-1-Code/QueriesAutomaton.o"
+	@echo "... Project-1-Code/QueriesAutomaton.i"
+	@echo "... Project-1-Code/QueriesAutomaton.s"
+	@echo "... Project-1-Code/RightParenAutomaton.o"
+	@echo "... Project-1-Code/RightParenAutomaton.i"
+	@echo "... Project-1-Code/RightParenAutomaton.s"
+	@echo "... Project-1-Code/RulesAutomaton.o"
+	@echo "... Project-1-Code/RulesAutomaton.i"
+	@echo "... Project-1-Code/RulesAutomaton.s"
+	@echo "... Project-1-Code/SchemesAutomaton.o"
+	@echo "... Project-1-Code/SchemesAutomaton.i"
+	@echo "... Project-1-Code/SchemesAutomaton.s"
+	@echo "... Project-1-Code/StringAutomaton.o"
+	@echo "... Project-1-Code/StringAutomaton.i"
+	@echo "... Project-1-Code/StringAutomaton.s"
+	@echo "... Project-1-Code/Token.o"
+	@echo "... Project-1-Code/Token.i"
+	@echo "... Project-1-Code/Token.s"
+	@echo "... Project-1-Code/UndefinedAutomaton.o"
+	@echo "... Project-1-Code/UndefinedAutomaton.i"
+	@echo "... Project-1-Code/UndefinedAutomaton.s"
+	@echo "... Project-1-Code/main.o"
+	@echo "... Project-1-Code/main.i"
+	@echo "... Project-1-Code/main.s"
 .PHONY : help
 
 

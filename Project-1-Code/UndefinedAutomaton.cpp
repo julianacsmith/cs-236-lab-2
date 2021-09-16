@@ -6,8 +6,13 @@ void UndefinedAutomaton::S0(const std::string &input) {
     if (currChar == '\'' || currChar == '#') { // Just checking basics again, because if String or comment, then it would've caught
         //I automatically know that these are invalid cases
         while(i != input.size()){
+            if(input.at(i) == '\n'){
+                newLines++;
+            }
             inputRead++;
+            i++;
         }
+    } else {
+        inputRead = 1;
     }
-    inputRead = 1;
 }

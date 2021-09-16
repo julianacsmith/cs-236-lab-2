@@ -17,7 +17,10 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/ColonDashAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/ColonDashAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommaAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommaAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/CommentAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/CommentAutomaton.cpp
@@ -79,7 +82,10 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/PeriodAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/PeriodAutomaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QMarkAutomaton.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QMarkAutomaton.cpp
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QMarkAutomaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/QueriesAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/QueriesAutomaton.cpp
@@ -114,4 +120,7 @@ CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/UndefinedAutomaton.cpp.o
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.cpp
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/UndefinedAutomaton.h
 CMakeFiles/cs_236_lab_1.dir/Project1_Starter_Code_(1)/main.cpp.o
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Automaton.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Lexer.h
+ /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/Token.h
  /users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)/main.cpp

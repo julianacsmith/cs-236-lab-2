@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Werror -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/users/anim_guest/smithj20/cs236/Project-1/Project1_Starter_Code (1)" 
+CXX_INCLUDES = -I"/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code (1)" 
 

@@ -7,19 +7,24 @@
 #include <vector>
 #include <iostream>
 #include "Token.h"
+#include <set>
 
 using namespace std;
 
 class Parser{
 private:
     vector<Token*> tokens;
-    vector<Token*> schemes;
-    vector<Token*> facts;
-    vector<Token*> rules;
-    vector<Token*> queries;
+    vector<string> schemes;
+    vector<string> facts;
+    vector<string> rules;
+    vector<string> queries;
+    set<string> domains;
+    string tokenWord;
+    bool isFacts = false;
     unsigned int itr;
 public:
     Parser(vector<Token*> t){ tokens = t; itr = 0;};
+    ~ Parser();
     void ParseDatalog();
     void ParseColon();
     void ParseScheme();

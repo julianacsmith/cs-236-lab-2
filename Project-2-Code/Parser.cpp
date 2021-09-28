@@ -1,6 +1,11 @@
 #include "Parser.h"
+#include <vector>
+#include <algorithm>
 
 using namespace std;
+
+Parser::~Parser() {
+}
 
 void Parser::ParseDatalog() {
     CheckComment();
@@ -14,6 +19,7 @@ void Parser::ParseDatalog() {
         ParseFacts();
         ParseColon();
         ParseFactList();
+        isFacts = false; // A bool flag to tell me if I'm checking facts. Used for Domains
         ParseRules();
         ParseColon();
         ParseRuleList();
@@ -47,6 +53,8 @@ void Parser::ParseScheme(){
     ParseID();
     ParseIDList();
     ParseRightParen();
+    schemes.push_back(tokenWord);
+    tokenWord = "";
 }
 
 void Parser::ParseSchemeList(){
@@ -65,6 +73,7 @@ void Parser::ParseFacts() {
     Token *currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if (currTokenType == "FACTS") {
+        isFacts = true;
         itr++;
         return;
     } else {
@@ -80,6 +89,8 @@ void Parser::ParseFact() {
     ParseStringList();
     ParseRightParen();
     ParsePeriod();
+    facts.push_back(tokenWord);
+    tokenWord = "";
 }
 
 void Parser::ParseFactList(){
@@ -112,6 +123,8 @@ void Parser::ParseRule(){
     ParsePredicate();
     ParsePredicateList();
     ParsePeriod();
+    rules.push_back(tokenWord);
+    tokenWord = "";
 }
 
 void Parser::ParseRuleList(){
@@ -141,6 +154,8 @@ void Parser::ParseQuery(){
     CheckComment();
     ParsePredicate();
     ParseQMark();
+    queries.push_back(tokenWord);
+    tokenWord = "";
 }
 
 void Parser::ParseQueryList(){
@@ -171,6 +186,7 @@ void Parser::ParseID(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "ID"){
+        tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -183,6 +199,7 @@ void Parser::ParseLeftParen(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "LEFT_PAREN"){
+        tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -206,6 +223,7 @@ void Parser::ParseRightParen(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "RIGHT_PAREN"){
+        tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -247,6 +265,7 @@ void Parser::ParsePeriod(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "PERIOD"){
+        tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -259,6 +278,7 @@ void Parser::ParseColonDash(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "COLON_DASH"){
+        tokenWord += " " + currToken->getValue() + " ";
         itr++;
         return;
     } else {
@@ -282,6 +302,7 @@ void Parser::ParseQMark(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "Q_MARK"){
+        tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -318,6 +339,7 @@ void Parser::ParseComma(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "COMMA"){
+        tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -330,6 +352,10 @@ void Parser::ParseString(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "STRING"){
+        tokenWord += currToken->getValue();
+        if(isFacts){ // If I'm checking facts, then I'll add it to my domains vector
+            domains.insert(currToken->getValue());
+        }
         itr++;
         return;
     } else {
@@ -339,11 +365,28 @@ void Parser::ParseString(){
 
 string Parser::toString(){
     string output;
-    for (Token* token : tokens){
-        output += token->toString() + "\n";
+    cout << "Schemes(" << schemes.size() << "):" << endl;
+    for(unsigned int i = 0; i < schemes.size(); i++){
+        cout << "  " << schemes.at(i) << endl;
     }
-    output += "Total Tokens = ";
-    output += to_string(tokens.size());
+    cout << "Facts(" << facts.size() << "):" << endl;
+    for(unsigned int i = 0; i < facts.size(); i++){
+        cout << "  " << facts.at(i) << endl;
+    }
+    cout << "Rules(" << rules.size() << "):" << endl;
+    for(unsigned int i = 0; i < rules.size(); i++){
+        cout << "  " << rules.at(i) << endl;
+    }
+    cout << "Queries(" << queries.size() << "):" << endl;
+    for(unsigned int i = 0; i < queries.size(); i++){
+        cout << "  " << queries.at(i) << endl;
+    }
+    set<string>:: iterator it;
+    cout << "Domains(" << domains.size() << "):" << endl;
+    for(it = domains.begin(); it != domains.end(); it++){
+        string domain = *it;
+        cout << "  " << domain << endl;
+    }
     return output;
 }
 
@@ -360,7 +403,7 @@ void Parser::CheckComment() {
 void Parser::Fail() {
     cout << "Failure!" << endl;
     Token* currToken = tokens.at(itr);
-    string currTokenType = currToken->typeToString(currToken->getType());
-    throw invalid_argument(currToken->toString());
+    cout << "\t" << currToken->toString() << endl;
+    throw currToken;
 }
 

@@ -32,12 +32,14 @@ int main(int argc, char** argv) {
 
     Parser* parser = new Parser(lexer->ReturnTokens());
     parser->ParseDatalog();
+    parser ->toString();
 
     //string output = parser->toString();
     //cout << output;
 
 
     delete lexer;
+    delete parser;
 
     return 0;
 }

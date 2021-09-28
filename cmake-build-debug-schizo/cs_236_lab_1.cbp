@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option type="4"/>
@@ -37,31 +27,18 @@
 					<DistClean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="cs_236_lab_1">
-				<Option output="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/cs_236_lab_1" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code (1)"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 cs_236_lab_1"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="cs_236_lab_1/fast">
-				<Option output="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/cs_236_lab_1" prefix_auto="0" extension_auto="0"/>
+			<Target title="cs_236_lab_2">
+				<Option output="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/cs_236_lab_2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -77,138 +54,167 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 cs_236_lab_1/fast"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 cs_236_lab_2"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cs_236_lab_2/fast">
+				<Option output="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/cs_236_lab_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code (1)"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 cs_236_lab_2/fast"/>
 					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j20 -f &quot;/users/anim_guest/smithj20/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/AddAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/AddAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/AddAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/AddAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/Automaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Automaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/ColonAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/ColonAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/ColonAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/ColonAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/ColonDashAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/ColonDashAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/ColonDashAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/ColonDashAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/CommaAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/CommaAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/CommaAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/CommaAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/CommentAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/CommentAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/CommentAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/CommentAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/EOFAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/EOFAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/EOFAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/EOFAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/FactsAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/FactsAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/FactsAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/FactsAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/IDAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/IDAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/IDAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/IDAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/LeftParenAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/LeftParenAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/LeftParenAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/LeftParenAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/Lexer.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Lexer.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/Lexer.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Lexer.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/MultiplyAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/MultiplyAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/MultiplyAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/MultiplyAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/PeriodAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Parser.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/PeriodAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Parser.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/QMarkAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/PeriodAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/QMarkAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/PeriodAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/QueriesAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/QMarkAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/QueriesAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/QMarkAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/RightParenAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/QueriesAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/RightParenAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/QueriesAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/RulesAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/RightParenAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/RulesAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/RightParenAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/SchemesAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/RulesAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/SchemesAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/RulesAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/StringAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/SchemesAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/StringAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/SchemesAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/Token.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/StringAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/Token.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/StringAutomaton.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/UndefinedAutomaton.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Token.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/UndefinedAutomaton.h">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/Token.h">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
-		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-1-Code/main.cpp">
-			<Option target="cs_236_lab_1"/>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/UndefinedAutomaton.cpp">
+			<Option target="cs_236_lab_2"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/UndefinedAutomaton.h">
+			<Option target="cs_236_lab_2"/>
+		</Unit>
+		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/Project-2-Code/main.cpp">
+			<Option target="cs_236_lab_2"/>
 		</Unit>
 		<Unit filename="/users/anim_guest/smithj20/cs236/Project-1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

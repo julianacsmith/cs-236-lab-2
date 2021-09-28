@@ -382,7 +382,7 @@ string Parser::toString(){
         cout << "  " << queries.at(i) << endl;
     }
     set<string>:: iterator it;
-    cout << "Domains(" << domains.size() << "):" << endl;
+    cout << "Domain(" << domains.size() << "):" << endl;
     for(it = domains.begin(); it != domains.end(); it++){
         string domain = *it;
         cout << "  " << domain << endl;

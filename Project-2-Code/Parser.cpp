@@ -28,7 +28,6 @@ void Parser::ParseDatalog() {
         ParseQuery();
         ParseQueryList();
         ParseEOF();
-        cout << "Success!" << endl;
     } else {
         Fail();
     }
@@ -38,7 +37,7 @@ void Parser::ParseColon(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "COLON"){
+    if(currTokenType == "COLON" && !failure){
         itr++;
         return;
     } else {
@@ -61,7 +60,7 @@ void Parser::ParseSchemeList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "FACTS"){
+    if(currTokenType != "FACTS" && !failure){
         CheckComment();
         ParseScheme();
         ParseSchemeList();
@@ -72,7 +71,7 @@ void Parser::ParseFacts() {
     CheckComment();
     Token *currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if (currTokenType == "FACTS") {
+    if (currTokenType == "FACTS" && !failure) {
         isFacts = true;
         itr++;
         return;
@@ -97,7 +96,7 @@ void Parser::ParseFactList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "RULES"){
+    if(currTokenType != "RULES" && !failure){
         CheckComment();
         ParseFact();
         ParseFactList();
@@ -108,7 +107,7 @@ void Parser::ParseRules(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "RULES"){
+    if(currTokenType == "RULES" && !failure){
         itr++;
         return;
     } else {
@@ -131,7 +130,7 @@ void Parser::ParseRuleList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "QUERIES"){
+    if(currTokenType != "QUERIES" && !failure){
         CheckComment();
         ParseRule();
         ParseRuleList();
@@ -142,7 +141,7 @@ void Parser::ParseQueries(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "QUERIES"){
+    if(currTokenType == "QUERIES" && !failure){
         itr++;
         return;
     } else {
@@ -162,7 +161,7 @@ void Parser::ParseQueryList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "EOF"){
+    if(currTokenType != "EOF" && !failure){
         CheckComment();
         ParseQuery();
         ParseQueryList();
@@ -173,7 +172,7 @@ void Parser::ParseEOF(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "EOF"){
+    if(currTokenType == "EOF" && !failure){
         itr++;
         return;
     } else {
@@ -185,7 +184,7 @@ void Parser::ParseID(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "ID"){
+    if(currTokenType == "ID" && !failure){
         tokenWord += currToken->getValue();
         itr++;
         return;
@@ -198,7 +197,7 @@ void Parser::ParseLeftParen(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "LEFT_PAREN"){
+    if(currTokenType == "LEFT_PAREN" && !failure){
         tokenWord += currToken->getValue();
         itr++;
         return;
@@ -211,7 +210,7 @@ void Parser::ParseIDList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "RIGHT_PAREN"){
+    if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
         ParseID();
         ParseIDList();
@@ -222,7 +221,7 @@ void Parser::ParseRightParen(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "RIGHT_PAREN"){
+    if(currTokenType == "RIGHT_PAREN" && !failure){
         tokenWord += currToken->getValue();
         itr++;
         return;
@@ -235,7 +234,7 @@ void Parser::ParseStringList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "RIGHT_PAREN"){
+    if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
         ParseString();
         ParseStringList();
@@ -264,7 +263,7 @@ void Parser::ParsePeriod(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "PERIOD"){
+    if(currTokenType == "PERIOD" && !failure){
         tokenWord += currToken->getValue();
         itr++;
         return;
@@ -277,7 +276,7 @@ void Parser::ParseColonDash(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "COLON_DASH"){
+    if(currTokenType == "COLON_DASH" && !failure){
         tokenWord += " " + currToken->getValue() + " ";
         itr++;
         return;
@@ -290,7 +289,7 @@ void Parser::ParsePredicateList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "PERIOD"){
+    if(currTokenType != "PERIOD" && !failure){
         ParseComma();
         ParsePredicate();
         ParsePredicateList();
@@ -301,7 +300,7 @@ void Parser::ParseQMark(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "Q_MARK"){
+    if(currTokenType == "Q_MARK" && !failure){
         tokenWord += currToken->getValue();
         itr++;
         return;
@@ -314,9 +313,9 @@ void Parser::ParseParameter(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "STRING"){
+    if(currTokenType == "STRING" && !failure){
         ParseString();
-    } else if (currTokenType == "ID"){
+    } else if (currTokenType == "ID" && !failure){
         ParseID();
     } else {
         Fail();
@@ -327,7 +326,7 @@ void Parser::ParseParameterList(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType != "RIGHT_PAREN"){
+    if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
         ParseParameter();
         ParseParameterList();
@@ -338,7 +337,7 @@ void Parser::ParseComma(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "COMMA"){
+    if(currTokenType == "COMMA" && !failure){
         tokenWord += currToken->getValue();
         itr++;
         return;
@@ -351,7 +350,7 @@ void Parser::ParseString(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
-    if(currTokenType == "STRING"){
+    if(currTokenType == "STRING" && !failure){
         tokenWord += currToken->getValue();
         if(isFacts){ // If I'm checking facts, then I'll add it to my domains vector
             domains.insert(currToken->getValue());
@@ -401,9 +400,15 @@ void Parser::CheckComment() {
 }
 
 void Parser::Fail() {
-    cout << "Failure!" << endl;
-    Token* currToken = tokens.at(itr);
-    cout << "\t" << currToken->toString() << endl;
-    throw currToken;
+    failure = true;
+    failedToken = tokens.at(itr);
+}
+
+bool Parser::Failed(){
+    return failure;
+}
+
+string Parser::FailedTokenString() {
+    return failedToken->toString();
 }
 

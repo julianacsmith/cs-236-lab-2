@@ -21,6 +21,8 @@ private:
     set<string> domains;
     string tokenWord;
     bool isFacts = false;
+    bool failure = false;
+    Token* failedToken;
     unsigned int itr;
 public:
     Parser(vector<Token*> t){ tokens = t; itr = 0;};
@@ -56,6 +58,8 @@ public:
     void ParseString();
     void Fail();
     void CheckComment();
+    bool Failed();
+    std::string FailedTokenString();
 
 
     std::string toString();

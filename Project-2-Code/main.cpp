@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
     Parser* parser = new Parser(lexer->ReturnTokens());
     parser->ParseDatalog();
     if(parser->Failed()){
-        cout << "Failed!" << endl;
+        cout << "Failure!" << endl;
         cout << "\t" << parser->FailedTokenString();
         return 0;
     } else {

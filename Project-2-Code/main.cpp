@@ -1,5 +1,6 @@
 #include "Lexer.h"
 #include "Parser.h"
+#include "Interpreter.h"
 #include <iostream>
 #include <sstream>
 #include <fstream>
@@ -32,7 +33,7 @@ int main(int argc, char** argv) {
 
     Parser* parser = new Parser(lexer->ReturnTokens());
     parser->ParseDatalog();
-    if(parser->Failed()){
+    /**if(parser->Failed()){
         cout << "Failure!" << endl;
         cout << "\t" << parser->FailedTokenString();
         return 0;
@@ -40,13 +41,15 @@ int main(int argc, char** argv) {
         cout << "Success!" << endl;
         parser->toString();
     }
-
+    **/
     //string output = parser->toString();
     //cout << output;
-
+    Interpreter *interpreter = new Interpreter(parser->GetDatalog());
+    cout << interpreter->toString() << endl;
 
     delete lexer;
     delete parser;
+    delete interpreter;
 
     return 0;
 }

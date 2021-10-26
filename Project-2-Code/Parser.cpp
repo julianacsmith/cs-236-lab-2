@@ -1,7 +1,8 @@
 #include "Parser.h"
 #include <vector>
 #include <algorithm>
-
+#include "Predicate.h"
+#include "Parameter.h"
 using namespace std;
 
 Parser::~Parser() {
@@ -28,6 +29,7 @@ void Parser::ParseDatalog() {
         ParseQuery();
         ParseQueryList();
         ParseEOF();
+        datalog.SetDatalog(domains);
     } else {
         Fail();
     }
@@ -46,12 +48,18 @@ void Parser::ParseColon(){
 }
 
 void Parser::ParseScheme(){
+    string name;
+    vector<Parameter> para;
     CheckComment();
     ParseID();
+    name = tokenWord;
     ParseLeftParen();
-    ParseID();
-    ParseIDList();
+    string p = ParseID();
+    para.push_back(Parameter(p));
+    ParseIDList(para);
     ParseRightParen();
+    Predicate scheme = Predicate(name, para);
+    datalog.AddScheme(scheme);
     schemes.push_back(tokenWord);
     tokenWord = "";
 }
@@ -81,13 +89,16 @@ void Parser::ParseFacts() {
 }
 
 void Parser::ParseFact() {
+    string name;
+    vector<Parameter> para;
     CheckComment();
-    ParseID();
+    name = ParseID();
     ParseLeftParen();
-    ParseString();
-    ParseStringList();
+    para.push_back(ParseString());
+    ParseStringList(para);
     ParseRightParen();
     ParsePeriod();
+    datalog.AddFacts(Predicate(name, para));
     facts.push_back(tokenWord);
     tokenWord = "";
 }
@@ -116,12 +127,15 @@ void Parser::ParseRules(){
 }
 
 void Parser::ParseRule(){
+    vector<Predicate> pred;
     CheckComment();
-    ParseHeadPredicate();
+    Predicate head = ParseHeadPredicate();
     ParseColonDash();
-    ParsePredicate();
-    ParsePredicateList();
+    pred.push_back(ParsePredicate());
+    ParsePredicateList(pred);
     ParsePeriod();
+    Rule rule = Rule(head, pred);
+    datalog.AddRules(rule);
     rules.push_back(tokenWord);
     tokenWord = "";
 }
@@ -151,7 +165,7 @@ void Parser::ParseQueries(){
 
 void Parser::ParseQuery(){
     CheckComment();
-    ParsePredicate();
+    datalog.AddQueries(ParsePredicate());
     ParseQMark();
     queries.push_back(tokenWord);
     tokenWord = "";
@@ -180,17 +194,18 @@ void Parser::ParseEOF(){
     }
 }
 
-void Parser::ParseID(){
+string Parser::ParseID(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "ID" && !failure){
         tokenWord += currToken->getValue();
         itr++;
-        return;
+        return currToken->getValue();
     } else {
         Fail();
     }
+    return "";
 }
 
 void Parser::ParseLeftParen(){
@@ -198,7 +213,7 @@ void Parser::ParseLeftParen(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "LEFT_PAREN" && !failure){
-        tokenWord += currToken->getValue();
+        //tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -206,14 +221,16 @@ void Parser::ParseLeftParen(){
     }
 }
 
-void Parser::ParseIDList(){
+void Parser::ParseIDList(vector<Parameter>& para){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
         ParseID();
-        ParseIDList();
+        string p = ParseID();
+        para.push_back(Parameter(p));
+        ParseIDList(para);
     }
 }
 
@@ -222,7 +239,7 @@ void Parser::ParseRightParen(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "RIGHT_PAREN" && !failure){
-        tokenWord += currToken->getValue();
+        //tokenWord += currToken->getValue();
         itr++;
         return;
     } else {
@@ -230,33 +247,42 @@ void Parser::ParseRightParen(){
     }
 }
 
-void Parser::ParseStringList(){
+void Parser::ParseStringList(vector<Parameter>& para){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
-        ParseString();
-        ParseStringList();
+        para.push_back(ParseString());
+        ParseStringList(para);
     }
 }
 
-void Parser::ParseHeadPredicate() {
+Predicate Parser::ParseHeadPredicate() {
+    string name;
+    vector<Parameter> para;
     CheckComment();
-    ParseID();
+    string p = ParseID();
+    para.push_back(Parameter(p));
     ParseLeftParen();
-    ParseID();
-    ParseIDList();
+    p = ParseID();
+    para.push_back(Parameter(p));
+    ParseIDList(para);
     ParseRightParen();
+    return Predicate (name, para);
 }
 
-void Parser::ParsePredicate(){
+Predicate Parser::ParsePredicate(){
+    string name;
+    vector<Parameter> para;
     CheckComment();
-    ParseID();
+    string p = ParseID();
+    para.push_back(Parameter(p));
     ParseLeftParen();
-    ParseParameter();
-    ParseParameterList();
+    para.push_back(ParseParameter());
+    ParseParameterList(para);
     ParseRightParen();
+    return Predicate(name, para);
 }
 
 void Parser::ParsePeriod(){
@@ -285,14 +311,14 @@ void Parser::ParseColonDash(){
     }
 }
 
-void Parser::ParsePredicateList(){
+void Parser::ParsePredicateList(vector<Predicate>& pred){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType != "PERIOD" && !failure){
         ParseComma();
         ParsePredicate();
-        ParsePredicateList();
+        ParsePredicateList(pred);
     }
 }
 
@@ -309,27 +335,32 @@ void Parser::ParseQMark(){
     }
 }
 
-void Parser::ParseParameter(){
+Parameter Parser::ParseParameter(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "STRING" && !failure){
-        ParseString();
+        Parameter p = Parameter(ParseString());
+        p.SetConstant(true);
+        return p;
     } else if (currTokenType == "ID" && !failure){
-        ParseID();
+        Parameter p = Parameter(ParseID());
+        p.SetConstant(false);
+        return p;
     } else {
         Fail();
     }
+    return Parameter("");
 }
 
-void Parser::ParseParameterList(){
+void Parser::ParseParameterList(vector<Parameter>& para){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
-        ParseParameter();
-        ParseParameterList();
+        para.push_back(ParseParameter());
+        ParseParameterList(para);
     }
 }
 
@@ -346,7 +377,7 @@ void Parser::ParseComma(){
     }
 }
 
-void Parser::ParseString(){
+string Parser::ParseString(){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
@@ -356,10 +387,11 @@ void Parser::ParseString(){
             domains.insert(currToken->getValue());
         }
         itr++;
-        return;
+        return currToken->getValue();
     } else {
         Fail();
     }
+    return "";
 }
 
 string Parser::toString(){

@@ -8,6 +8,9 @@
 #include <iostream>
 #include "Token.h"
 #include <set>
+#include "Predicate.h"
+#include "Parameter.h"
+#include "Datalog.h"
 
 using namespace std;
 
@@ -24,6 +27,7 @@ private:
     bool failure = false;
     Token* failedToken;
     unsigned int itr;
+    Datalog datalog = Datalog();
 public:
     Parser(vector<Token*> t){ tokens = t; itr = 0;};
     ~ Parser();
@@ -41,27 +45,40 @@ public:
     void ParseQuery();
     void ParseQueryList();
     void ParseEOF();
-    void ParseID();
+    string ParseID();
     void ParseLeftParen();
-    void ParseIDList();
+    void ParseIDList(vector<Parameter>& para);
     void ParseRightParen();
-    void ParseStringList();
-    void ParseHeadPredicate();
-    void ParsePredicate();
+    void ParseStringList(vector<Parameter>& para);
+    Predicate ParseHeadPredicate();
+    Predicate ParsePredicate();
     void ParsePeriod();
     void ParseColonDash();
-    void ParsePredicateList();
+    void ParsePredicateList(vector<Predicate>& pred);
     void ParseQMark();
-    void ParseParameter();
-    void ParseParameterList();
+    Parameter ParseParameter();
+    void ParseParameterList(vector<Parameter>& para);
     void ParseComma();
-    void ParseString();
+    string ParseString();
     void Fail();
     void CheckComment();
     bool Failed();
     std::string FailedTokenString();
-
-
+    vector<string> GetSchemes(){
+        return schemes;
+    }
+    vector<string> GetFacts(){
+        return facts;
+    }
+    vector<string> GetRules(){
+        return rules;
+    }
+    vector<string> GetQueries(){
+        return queries;
+    }
+    Datalog GetDatalog(){
+        return datalog;
+    }
     std::string toString();
 };
 

@@ -24,6 +24,9 @@ public:
     int GetSize(){
         return values.size();
     }
+    std::vector<std::string> GetTuple(){
+        return values;
+    }
 };
 
 #endif //CS_236_LAB_1_TUPLE_H

@@ -18,11 +18,11 @@ public:
         Relation r = Relation(n);
         relation.insert(std::pair<string, Relation>(n, r));
     }
-    bool FindRelation(std::string n){
+    Relation* FindRelation(std::string n){
         if(relation.find(n) != relation.end()){
-            return true;
+            return &relation.at(n);
         }
-        return false;
+        return new Relation();
     }
     void AddRelation(Relation r){
         relation.insert(std::pair<string, Relation>(r.GetName(), r));

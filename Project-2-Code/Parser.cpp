@@ -51,8 +51,7 @@ void Parser::ParseScheme(){
     string name;
     vector<Parameter> para;
     CheckComment();
-    ParseID();
-    name = tokenWord;
+    name = ParseID();
     ParseLeftParen();
     string p = ParseID();
     para.push_back(Parameter(p));
@@ -199,9 +198,10 @@ string Parser::ParseID(){
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType == "ID" && !failure){
-        tokenWord += currToken->getValue();
+        string tw = currToken->getValue();
+        tokenWord += tw;
         itr++;
-        return currToken->getValue();
+        return tw;
     } else {
         Fail();
     }
@@ -227,7 +227,6 @@ void Parser::ParseIDList(vector<Parameter>& para){
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType != "RIGHT_PAREN" && !failure){
         ParseComma();
-        ParseID();
         string p = ParseID();
         para.push_back(Parameter(p));
         ParseIDList(para);
@@ -276,8 +275,7 @@ Predicate Parser::ParsePredicate(){
     string name;
     vector<Parameter> para;
     CheckComment();
-    string p = ParseID();
-    para.push_back(Parameter(p));
+    name = ParseID();
     ParseLeftParen();
     para.push_back(ParseParameter());
     ParseParameterList(para);

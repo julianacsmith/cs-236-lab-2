@@ -13,7 +13,9 @@ private:
 public:
     Header(){}
     ~Header(){}
-
+    Header (std::vector<std::string> att){
+        attributes = att;
+    }
     std::string GetAttribute(int pos){
         return attributes.at(pos);
     }

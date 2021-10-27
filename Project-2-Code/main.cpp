@@ -45,7 +45,9 @@ int main(int argc, char** argv) {
     //string output = parser->toString();
     //cout << output;
     Interpreter *interpreter = new Interpreter(parser->GetDatalog());
-    cout << interpreter->toString() << endl;
+    interpreter->SchemeToRelation();
+    interpreter->FactToTuple();
+    interpreter->EvaluateQueries();
 
     delete lexer;
     delete parser;

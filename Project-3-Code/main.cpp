@@ -47,7 +47,6 @@ int main(int argc, char** argv) {
     Interpreter *interpreter = new Interpreter(parser->GetDatalog());
     interpreter->SchemeToRelation();
     interpreter->FactToTuple();
-    interpreter->EvaluateRules();
     interpreter->EvaluateQueries();
 
     delete lexer;

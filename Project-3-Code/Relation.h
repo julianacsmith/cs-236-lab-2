@@ -49,12 +49,6 @@ public:
     Relation select (size_t index1, size_t index2);
     Relation project (vector<size_t> indices);
     Relation rename (vector<string>attributes);
-    Relation Join (Relation r2);
-    Relation Unity(Relation r2);
-    Header CombineHeaders(Header h1, Header h2);
-    bool isJoinable(Tuple t1, Tuple t2, vector<string> match);
-    Tuple combineTuples(Tuple t1, Tuple t2);
-    vector<std::string> FindMatch(Relation r2);
     void addTuple(Tuple t){ rows.insert(t);}
     string toString(map<string, int> variables);
 

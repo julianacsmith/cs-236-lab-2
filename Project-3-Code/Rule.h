@@ -14,8 +14,6 @@ private:
     std::vector<Predicate> body;
 public:
     Rule(Predicate h, std::vector<Predicate> b) : head(h), body(b){}
-    std::vector<Predicate> GetBody(){ return body; }
-    Predicate GetHead(){ return head; }
     std::string toString(){
         std::string output = head.toString() + " :- ";
         for(unsigned int i = 0; i < body.size(); i++){

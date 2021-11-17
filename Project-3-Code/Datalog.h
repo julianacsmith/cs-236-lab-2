@@ -46,10 +46,6 @@ public:
     vector<Predicate> GetQueries(){
         return queries;
     }
-
-    vector<Rule> GetRules(){
-        return rules;
-    }
 };
 
 #endif //CS_236_LAB_1_DATALOG_H

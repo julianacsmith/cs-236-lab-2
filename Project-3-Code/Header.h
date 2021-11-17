@@ -6,7 +6,6 @@
 #define CS_236_LAB_1_HEADER_H
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 class Header{
 private:
@@ -34,18 +33,6 @@ public:
         }
         return -1;
     }
-
-    int Size(){
-        return attributes.size();
-    }
-
-    bool AttributeExists(std::string a){
-        if(find(attributes.begin(), attributes.end(), a) != attributes.end()){
-            return true;
-        }
-        return false;
-    }
-
     void SetAttribute(int pos, std::string a){
         attributes.at(pos) = a;
     }

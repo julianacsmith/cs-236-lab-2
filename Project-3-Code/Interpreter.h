@@ -21,7 +21,6 @@ public:
     void FactToTuple();
     Relation EvaluatePredicate(Relation* r, Predicate p);
     Relation EvaluateQueries();
-    Relation EvaluateRules();
     string QueryToString(Predicate p, Relation* r);
 };
 

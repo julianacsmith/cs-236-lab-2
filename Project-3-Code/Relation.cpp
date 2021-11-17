@@ -5,8 +5,6 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <algorithm>
-#include <vector>
 using namespace std;
 
 Relation Relation::select(size_t index, string value){
@@ -94,88 +92,4 @@ string Relation::toString(map<string, int> variables) {
         return "";
     }
     return output;
-}
-
-Header Relation::CombineHeaders(Header h1, Header h2) {
-    Header newh;
-    for(int i = 0; i < h1.Size(); i++){ // Goes through the entirety of the first header
-        string a = h1.GetAttribute(i); // Gets the current attribute
-        if(!newh.AttributeExists(a)){ // If attribute doesnt exist in newh
-            newh.AddAttribute(a); // Add new attribute
-        }
-    }
-    for(int i = 0; i < h2.Size(); i++){ // Goes through all of h2
-        string a = h2.GetAttribute(i); // Gets the current attribute
-        if(!newh.AttributeExists(a)){ // If attribute doesnt exist in newh
-            newh.AddAttribute(a); // Add new attribute
-        }
-    }
-    return newh; // return the new header
-}
-
-bool Relation::isJoinable(Tuple t1, Tuple t2, vector<string> match) {
-    bool canJoin = true;
-    for(int i = 0; i < t1.GetSize(); i++){
-        if(find(match.begin(), match.end(), t1.GetValue(i)) != match.end()){
-            int pos2 = t2.FindValPos(t1.GetValue(i));
-            if(t1.GetValue(i) != t2.GetValue(pos2)){
-                canJoin = false;
-            }
-        }
-    }
-    return canJoin;
-}
-
-Tuple Relation::combineTuples(Tuple t1, Tuple t2) {
-    Tuple newT;
-    for(int i = 0; i < t1.GetSize(); i++){
-        string v = t1.GetValue(i);
-        if(!newT.ValExists(v)){
-            newT.SetValue(v);
-        }
-    }
-    for(int i = 0; i < t2.GetSize(); i++){
-        string v = t2.GetValue(i);
-        if(!newT.ValExists(v)){
-            newT.SetValue(v);
-        }
-    }
-    return newT;
-}
-
-Relation Relation::Join(Relation r2) {
-    Header newHeader = CombineHeaders(header, r2.header); // Combines the headers
-    Relation newRelation; // Creates a blank new relation
-    newRelation.header = newHeader; // Sets the new header
-    vector<string> matching = FindMatch(r2);
-    for(Tuple t1 : rows){ // For every tuple in r1
-        for(Tuple t2 : r2.rows){ // For every tuple in r2
-            if(isJoinable(t1, t2, matching)) {
-                Tuple newT = combineTuples(t1, t2); // Combine the tuples (This calls isJoinable)
-                newRelation.addTuple(newT); // Add new tuple to the relation
-            }
-        }
-    }
-    return newRelation; // Return the filled relation
-}
-
-vector<std::string> Relation::FindMatch(Relation r2) {
-    vector<string> matches;
-    for(int i = 0; i < header.Size(); i++){
-        if(r2.header.FindAttribute(header.GetAttribute(i)) != -1){
-            matches.push_back(header.GetAttribute(i));
-        }
-    }
-    return matches;
-}
-
-Relation Relation::Unity(Relation r2) {
-    Relation r;
-    r.header = header;
-    for(Tuple t: r2.rows){
-        if(rows.insert(t).second){
-            r.addTuple(t);
-        }
-    }
-    return r;
 }

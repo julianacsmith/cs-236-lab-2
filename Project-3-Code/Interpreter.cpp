@@ -84,26 +84,6 @@ Relation Interpreter::EvaluateQueries(){
     return r;
 }
 
-Relation Interpreter::EvaluateRules() {
-    Relation *rel;
-    Relation r;
-    Relation finalRel;
-    vector<Rule> rules = datalogProgram.GetRules();
-    for (Rule rule : rules) {
-        vector<Predicate> rulePred = rule.GetBody();
-        for (Predicate ru: rulePred) {
-            string name = ru.GetName();
-            rel = database.FindRelation(name);
-            if (rel->GetName() != "") {
-                r = EvaluatePredicate(rel, ru);
-                //rel = &r;
-                finalRel.Join(r);
-            }
-        }
-    }
-    return finalRel;
-}
-
 string Interpreter::QueryToString(Predicate p, Relation* r) {
     string output = "";
     vector<Parameter> para = p.GetParameter();

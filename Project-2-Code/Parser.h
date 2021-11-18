@@ -54,7 +54,7 @@ public:
     Predicate ParsePredicate();
     void ParsePeriod();
     void ParseColonDash();
-    void ParsePredicateList(vector<Predicate>& pred);
+    void ParsePredicateList(vector<Predicate>* pred);
     void ParseQMark();
     Parameter ParseParameter();
     void ParseParameterList(vector<Parameter>& para);

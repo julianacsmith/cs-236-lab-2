@@ -2,6 +2,8 @@
 // Created by Juliana Smith on 10/25/21.
 //
 #include "Relation.h"
+#include <stdio.h>
+#include <ctype.h>
 #include <iostream>
 #include <string>
 #include <map>
@@ -29,33 +31,39 @@ Relation Relation::select(size_t index1, size_t index2) {
     return r;
 }
 
-Relation Relation::project(vector<size_t> indices) {
+Relation Relation::project(vector<int> indices) {
     string newName = "";
-    for(int index : indices){
-        newName += name.at(index);
-    }
     Header h = Header();
-    for(unsigned int i = 0; i < newName.size(); i++){
-        string s(1, newName.at(i));
-        h.AddAttribute(s);
+    for(unsigned int i = 0; i < indices.size(); i++){
+        string att = header.GetAttribute(indices.at(i));
+        //string s(1, newName.at(i));
+        h.AddAttribute(att);
     }
-    Relation r = Relation(newName, h); // Creates a blank new relation
+    Relation r = Relation(newName, h);
+    int i = 0;// Creates a blank new relation
     for(Tuple t : rows){ // Goes through all the tuples
         Tuple tup = Tuple();
         for(int index : indices){
-            tup.SetValue(t.GetValue(index));
+            int size = t.GetSize();
+            if(index >= size){
+                tup.SetValue(t.GetValue(i));
+            } else {
+                tup.SetValue(t.GetValue(index));
+            }
+            i++;
         }
+        i=0;
         r.addTuple(tup);
     }
     return r;
 }
 
 Relation Relation::rename(vector<string> attributes) {
-    Header h = header;
+    /**Header h = header;
     for(unsigned int i = 0; i < attributes.size(); i++){
         h.SetAttribute(i, attributes.at(i));
-    }
-    Relation r = Relation(name, h);
+    } **/
+    Relation r = Relation(name, attributes);
     r.SetTuples(rows);
     return r;
 }
@@ -67,20 +75,23 @@ string Relation::toString(map<string, int> variables) {
     for(Tuple t : rows){ // For each tuple
         output += "  "; // Indent accordingly
         for(int i = 0; i < t.GetSize(); i++) { // Loop through all values in tuple
-            if(parsedHeader.find(header.GetAttribute(i)) == parsedHeader.end()) { // If we haven't addressed this header
-                map<string, int>::iterator it = variables.find(header.GetAttribute(i)); // Set iterator to the index in variables
-                if (it != variables.end()) { // If it exists
-                    string equals = header.GetAttribute(i) + "=" + t.GetValue(i); // Make a string with the potential added output
-                    string check = output.substr(output.size() -2, output.size() -1); // Gets a substring
-                    if ((check.find(' ') == string::npos || output.find(line) == string::npos) ) { // If the substring is valid or line doesn't already exist within the output
-                        output += ", "; // Add a comma
+            if (i < header.Size()){
+                if(parsedHeader.find(header.GetAttribute(i)) == parsedHeader.end()) {
+                    string attChecker = header.GetAttribute(i);// If we haven't addressed this header
+                    map<string, int>::iterator it = variables.find(attChecker); // Set iterator to the index in variables
+                    if (it != variables.end()) { // If it exists
+                        string equals = header.GetAttribute(i) + "=" + t.GetValue(i); // Make a string with the potential added output
+                        string check = output.substr(output.size() - 2, output.size() - 1); // Gets a substring
+                        if ((check.find(' ') == string::npos || output.find(line) == string::npos)) { // If the substring is valid or line doesn't already exist within the output
+                            output += ", "; // Add a comma
+                        }
+                        if (line.find(equals) == string::npos) { // If line doesn't contain equals
+                            output += equals; // Add output to equals
+                            line = equals; // Set line equal to what we;ve just added
+                        }
                     }
-                    if (line.find(equals) == string::npos) { // If line doesn't contain equals
-                        output += equals; // Add output to equals
-                        line = equals; // Set line equal to what we;ve just added
-                    }
-                }
                 parsedHeader.insert(header.GetAttribute(i)); // Add this current header to parsedHeader (keeps track of what we've touched already
+                }
             }
         }
         if(itr < Size() && output != "  ") { // While were still within the size limit and output isn't a "blank output"
@@ -97,15 +108,15 @@ string Relation::toString(map<string, int> variables) {
 }
 
 Header Relation::CombineHeaders(Header h1, Header h2) {
-    Header newh;
+    Header newh; // Create a new header
     for(int i = 0; i < h1.Size(); i++){ // Goes through the entirety of the first header
         string a = h1.GetAttribute(i); // Gets the current attribute
-        if(!newh.AttributeExists(a)){ // If attribute doesnt exist in newh
-            newh.AddAttribute(a); // Add new attribute
-        }
+        ToLower(a);
+        newh.AddAttribute(a); // Add new attribute
     }
     for(int i = 0; i < h2.Size(); i++){ // Goes through all of h2
         string a = h2.GetAttribute(i); // Gets the current attribute
+        ToLower(a);
         if(!newh.AttributeExists(a)){ // If attribute doesnt exist in newh
             newh.AddAttribute(a); // Add new attribute
         }
@@ -113,69 +124,78 @@ Header Relation::CombineHeaders(Header h1, Header h2) {
     return newh; // return the new header
 }
 
-bool Relation::isJoinable(Tuple t1, Tuple t2, vector<string> match) {
-    bool canJoin = true;
-    for(int i = 0; i < t1.GetSize(); i++){
-        if(find(match.begin(), match.end(), t1.GetValue(i)) != match.end()){
-            int pos2 = t2.FindValPos(t1.GetValue(i));
-            if(t1.GetValue(i) != t2.GetValue(pos2)){
-                canJoin = false;
-            }
+bool Relation::isJoinable(Tuple t1, Tuple t2, vector<int> match) {
+    if(match.size() == 0){ // If there are no matches
+        return true; // Automatically return true
+    } else { // Otherwise
+        string val1;
+        string val2;
+        if(match.at(0) < t1.GetSize() && match.at(1) < t2.GetSize()) {
+            val1 = t1.GetValue(match.at(0)); // Get the value from t1
+            val2 = t2.GetValue(match.at(1)); // Get the value from t2
+        } else if (match.at(0) < t1.GetSize()){
+            val1 = t1.GetValue(match.at(0)); // Get the value from t1
+            val2 = t2.GetValue(0);
+        } else if (match.at(1) < t2.GetSize()){
+            val1 = t1.GetValue(0); // Get the value from t1
+            val2 = t2.GetValue(match.at(1));
+        }
+        if (val1 == val2) { // If the values in match are the same
+            commonVar = val1; // Set the common Variable to val1
+            return true; // Return true
         }
     }
-    return canJoin;
+    return false; // Nothing matches when there are supposed to be matches, then return false
 }
 
 Tuple Relation::combineTuples(Tuple t1, Tuple t2) {
-    Tuple newT;
-    for(int i = 0; i < t1.GetSize(); i++){
-        string v = t1.GetValue(i);
-        if(!newT.ValExists(v)){
-            newT.SetValue(v);
+    Tuple newT; // Create a new tuple
+        for (int i = 0; i < t1.GetSize(); i++) { // Add all the elements from the first tuple
+            string v = t1.GetValue(i); // Gets the value of the current position in tuple
+            newT.SetValue(v); // Sets the value in newT
         }
-    }
-    for(int i = 0; i < t2.GetSize(); i++){
-        string v = t2.GetValue(i);
-        if(!newT.ValExists(v)){
-            newT.SetValue(v);
+        for (int i = 0; i < t2.GetSize(); i++) { // Goes through each element in t2
+            string v = t2.GetValue(i); // Gets the value of the current element in tuple
+            if(v != commonVar) { // If it's not the common variable (set in matching in Interpreter)
+                newT.SetValue(v); // Set the value in the new tuple
+            }
         }
-    }
-    return newT;
+    return newT; // return new tuple
 }
 
-Relation Relation::Join(Relation r2) {
-    Header newHeader = CombineHeaders(header, r2.header); // Combines the headers
-    Relation newRelation; // Creates a blank new relation
-    newRelation.header = newHeader; // Sets the new header
-    vector<string> matching = FindMatch(r2);
-    for(Tuple t1 : rows){ // For every tuple in r1
-        for(Tuple t2 : r2.rows){ // For every tuple in r2
-            if(isJoinable(t1, t2, matching)) {
-                Tuple newT = combineTuples(t1, t2); // Combine the tuples (This calls isJoinable)
-                newRelation.addTuple(newT); // Add new tuple to the relation
+Relation Relation::Join(Relation r2, vector<int> matches) {
+    Relation r = Relation(); // New Relation
+    r.SetHeader(CombineHeaders(this->header, r2.GetHeader())); // Set r's header to combine headers
+    for (Tuple t1: rows) { // For every tuple in r1
+        for (Tuple t2: r2.rows) { // For every tuple in r2
+            if (isJoinable(t1, t2, matches)) { // If they are joinable
+                Tuple newT = combineTuples(t1, t2); // Combine the tuples
+                r.addTuple(newT); // Add new tuple to r
             }
         }
     }
-    return newRelation; // Return the filled relation
+    return r; // return r
 }
 
-vector<std::string> Relation::FindMatch(Relation r2) {
-    vector<string> matches;
-    for(int i = 0; i < header.Size(); i++){
-        if(r2.header.FindAttribute(header.GetAttribute(i)) != -1){
-            matches.push_back(header.GetAttribute(i));
-        }
+bool Relation::Unity(Relation r2) {
+    bool returnVal = false;
+    unsigned int ogSize = rows.size();
+    for (Tuple t : r2.rows){ // For every tuple in r2
+        this->addTuple(t); // add tuple from r2 to this
     }
-    return matches;
+    if(this->rows.size() != ogSize){
+        returnVal = true;
+    }
+    return returnVal;
 }
 
-Relation Relation::Unity(Relation r2) {
-    Relation r;
-    r.header = header;
-    for(Tuple t: r2.rows){
-        if(rows.insert(t).second){
-            r.addTuple(t);
-        }
+string Relation::ToLower(string a) { // Sets the given string to lowercase. Helps when combining headers
+    int i = 0;
+    char c;
+    while(a[i]){
+        c = a[i];
+        putchar(tolower(c));
+        i++;
     }
-    return r;
+    return a;
 }

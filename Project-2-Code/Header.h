@@ -46,6 +46,10 @@ public:
         return false;
     }
 
+    std::vector<std::string> GetAllAttributes(){
+        return attributes;
+    }
+
     void SetAttribute(int pos, std::string a){
         attributes.at(pos) = a;
     }

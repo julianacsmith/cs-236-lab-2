@@ -131,7 +131,7 @@ void Parser::ParseRule(){
     Predicate head = ParseHeadPredicate();
     ParseColonDash();
     pred.push_back(ParsePredicate());
-    ParsePredicateList(pred);
+    ParsePredicateList(&pred);
     ParsePeriod();
     Rule rule = Rule(head, pred);
     datalog.AddRules(rule);
@@ -261,10 +261,9 @@ Predicate Parser::ParseHeadPredicate() {
     string name;
     vector<Parameter> para;
     CheckComment();
-    string p = ParseID();
-    para.push_back(Parameter(p));
+    name = ParseID();
     ParseLeftParen();
-    p = ParseID();
+    string p = ParseID();
     para.push_back(Parameter(p));
     ParseIDList(para);
     ParseRightParen();
@@ -309,13 +308,13 @@ void Parser::ParseColonDash(){
     }
 }
 
-void Parser::ParsePredicateList(vector<Predicate>& pred){
+void Parser::ParsePredicateList(vector<Predicate>* pred){
     CheckComment();
     Token* currToken = tokens.at(itr);
     string currTokenType = currToken->typeToString(currToken->getType());
     if(currTokenType != "PERIOD" && !failure){
         ParseComma();
-        ParsePredicate();
+        pred->push_back(ParsePredicate());
         ParsePredicateList(pred);
     }
 }

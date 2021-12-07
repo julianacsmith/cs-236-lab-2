@@ -78,6 +78,7 @@ string Relation::toString(map<string, int> variables) {
             if (i < header.Size()){
                 if(parsedHeader.find(header.GetAttribute(i)) == parsedHeader.end()) {
                     string attChecker = header.GetAttribute(i);// If we haven't addressed this header
+                    attChecker = ToUpper(attChecker);
                     map<string, int>::iterator it = variables.find(attChecker); // Set iterator to the index in variables
                     if (it != variables.end()) { // If it exists
                         string equals = header.GetAttribute(i) + "=" + t.GetValue(i); // Make a string with the potential added output
@@ -111,10 +112,12 @@ Header Relation::CombineHeaders(Header h1, Header h2) {
     Header newh; // Create a new header
     for(int i = 0; i < h1.Size(); i++){ // Goes through the entirety of the first header
         string a = h1.GetAttribute(i); // Gets the current attribute
+        ToLower(a);
         newh.AddAttribute(a); // Add new attribute
     }
     for(int i = 0; i < h2.Size(); i++){ // Goes through all of h2
         string a = h2.GetAttribute(i); // Gets the current attribute
+        ToLower(a);
         if(!newh.AttributeExists(a)){ // If attribute doesnt exist in newh
             newh.AddAttribute(a); // Add new attribute
         }
@@ -148,16 +151,16 @@ bool Relation::isJoinable(Tuple t1, Tuple t2, vector<int> match) {
 
 Tuple Relation::combineTuples(Tuple t1, Tuple t2) {
     Tuple newT; // Create a new tuple
-    for (int i = 0; i < t1.GetSize(); i++) { // Add all the elements from the first tuple
-        string v = t1.GetValue(i); // Gets the value of the current position in tuple
-        newT.SetValue(v); // Sets the value in newT
-    }
-    for (int i = 0; i < t2.GetSize(); i++) { // Goes through each element in t2
-        string v = t2.GetValue(i); // Gets the value of the current element in tuple
-        if(v != commonVar) { // If it's not the common variable (set in matching in Interpreter)
-            newT.SetValue(v); // Set the value in the new tuple
+        for (int i = 0; i < t1.GetSize(); i++) { // Add all the elements from the first tuple
+            string v = t1.GetValue(i); // Gets the value of the current position in tuple
+            newT.SetValue(v); // Sets the value in newT
         }
-    }
+        for (int i = 0; i < t2.GetSize(); i++) { // Goes through each element in t2
+            string v = t2.GetValue(i); // Gets the value of the current element in tuple
+            if(v != commonVar) { // If it's not the common variable (set in matching in Interpreter)
+                newT.SetValue(v); // Set the value in the new tuple
+            }
+        }
     return newT; // return new tuple
 }
 
@@ -167,14 +170,7 @@ Relation Relation::Join(Relation r2, vector<int> matches) {
     matches = FindMatch(r2);
     for (Tuple t1: rows) { // For every tuple in r1
         for (Tuple t2: r2.rows) { // For every tuple in r2
-            bool canJoin;
-            for(unsigned int i = 0; i < matches.size(); i+=2) {
-                vector<int> tempMatches;
-                tempMatches.push_back(matches.at(i));
-                tempMatches.push_back(matches.at(i+1));
-                canJoin = isJoinable(t1, t2, tempMatches);
-            }
-            if (canJoin) { // If they are joinable
+            if (isJoinable(t1, t2, matches)) { // If they are joinable
                 Tuple newT = combineTuples(t1, t2); // Combine the tuples
                 r.addTuple(newT); // Add new tuple to r
             }
@@ -189,7 +185,7 @@ Relation Relation::Unity(Relation r2, bool& addedTuple) {
     for (Tuple t : r2.rows){ // For every tuple in r2
         if(this->addTuple(t)){
             addedTuple = true;
-            cout << TupleToString(t) << endl;
+            //Print out the tuple: Do the Cout
         } // add tuple from r2 to this
         r.addTuple(t);
 
@@ -197,17 +193,27 @@ Relation Relation::Unity(Relation r2, bool& addedTuple) {
     return r;
 }
 
-string Relation::TupleToString(Tuple t) {
-    string output = "  ";
-    for(int i = 0; i < t.GetSize(); i++){
-        output += header.GetAttribute(i);
-        output += "=";
-        output += t.GetValue(i);
-        if(i != t.GetSize()-1){
-            output += ", ";
-        }
+string Relation::ToLower(string a) { // Sets the given string to lowercase. Helps when combining headers
+    int i = 0;
+    char c;
+    while(a[i]){
+        c = a[i];
+        putchar(tolower(c));
+        i++;
     }
-    return output;
+    return a;
+}
+
+string Relation::ToUpper(string a) {
+    int i = 0;
+    char c;
+    while(a[i]){
+        c=a[i];
+        a.at(i) = toupper(c);
+        //putchar(c);
+        i++;
+    }
+    return a;
 }
 
 vector<int> Relation::FindMatch(Relation r2) {

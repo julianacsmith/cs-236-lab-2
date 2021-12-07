@@ -7,7 +7,6 @@
 #include "Header.h"
 #include "Tuple.h"
 #include "Parser.h"
-#include "Graph.h"
 
 
 void Interpreter::SchemeToRelation() {
@@ -97,7 +96,9 @@ void Interpreter::EvaluateRules(){
     do {
         addedTuple = false;
         for (Rule rule : datalogProgram.GetRules()) {
-            cout << rule.toString() << endl;
+            //string temp = rule.toString();
+            //cout << temp << endl;
+            //cout << temp << endl;
             Relation r = EvaluateRule(rule);
         }
         counter++;
@@ -117,11 +118,15 @@ Relation Interpreter::EvaluateRule(Rule r) {
             relations.push_back(newRel); // Push back into relations vector
         }
     }
-    vector<int> matches;
-    finalRel = relations.at(0);
+    vector<int> matches = FindMatches(r.GetBody()); // Find all the matches were supposed to have
+    /**if(relations.size() == 1){ // If theres only one relation
+        finalRel = relations.at(0); // Set final to equal that relation
+    } else { // If more than one relation **/
+        finalRel = relations.at(0);
         for (unsigned int i = 1; i < relations.size(); i++) { // For every relation in relations
             finalRel = finalRel.Join(relations.at(i), matches); // the 2 adjacent relations and save to finalRel
         }
+    //}
     vector<string> attOfHeader; // Vector of strings to hold attributes we want to keep
     for(Parameter p : r.GetHead().GetParameter()){ // For every parameter in teh head of the rule
         attOfHeader.push_back(p.toString()); // Push it back into attOfHeader
@@ -132,6 +137,7 @@ Relation Interpreter::EvaluateRule(Rule r) {
     finalRel.SetName(r.GetHead().GetName()); // Set finalRel's name to the rule's head's name
     finalRel = finalRel.rename(rel->GetHeader().GetAllAttributes()); // Rename finalRel so the union works
     Relation newRel = rel->Unity(finalRel, addedTuple); // UNION TIME
+    //cout << RuleToString(r, &finalRel);
     rel->SetName(r.GetHead().GetName());
     return *rel;
 }
@@ -178,6 +184,37 @@ string Interpreter::TupleToString(Header h, set<Tuple> tuples) {
         }
     }
     return output;
+}
+
+std::vector<int> Interpreter::FindMatches(std::vector<Predicate> p) {
+    vector<string> matches;
+    vector<string> trueMatch;
+    vector<string> temp;
+    map<string, int> tracker;
+    vector<int> positions;
+    int j = 0;
+    for(Predicate pred : p){ // For every predicate in p
+        vector<Parameter> param = pred.GetParameter(); // Get the parameters
+        for(Parameter pa : param){ // For every parameter in p.GetParameter()
+            if(find(matches.begin(), matches.end(), pa.toString()) != matches.end()){ // See if the parameters exists in matches. If it does...
+                string val = pa.toString(); // Save the parameter's toString
+                trueMatch.push_back(pa.toString()); //
+                positions.push_back(tracker.at(val));
+                positions.push_back(j);
+            }
+            tracker.insert(std::pair<string, int>(pa.toString(), j));
+            temp.push_back(pa.toString());
+            j++;
+        }
+        if(matches.size() == 0){
+            matches = temp;
+        } else {
+            matches = trueMatch;
+        }
+        temp.empty();
+        j = 0;
+    }
+    return positions;
 }
 
 std::vector<int> Interpreter::FindCols(std::vector<std::string> att, std::vector<std::string> cols) {

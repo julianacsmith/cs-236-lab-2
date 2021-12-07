@@ -37,7 +37,6 @@ public:
     void SetAttribute(int pos, string val) {header.SetAttribute(pos, val); }
     void SetHeader (Header h){ header = h; }
     void SetTuples (set<Tuple> r){ rows = r;}
-    string TupleToString(Tuple t);
     set<Tuple> GetTuples(){return rows;}
     bool IsEmpty(){
         if(rows.empty()){
@@ -63,6 +62,8 @@ public:
     vector<int> FindMatch(Relation r2);
     bool addTuple(Tuple t){ return rows.insert(t).second;}
     string toString(map<string, int> variables);
+    string ToLower(string a);
+    string ToUpper(string a);
     void ResetPass(){ firstPass = false; }
 };
 
